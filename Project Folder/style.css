@@ -1,0 +1,1443 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/*--====================== Navigation =====================*/
+/*
+#nav-bar{
+    position: sticky;
+    top:0;
+    z-index:10;
+}
+
+.navbar-brand img{
+    height:30px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color:#fff;
+    float: right;
+    text-align:left;
+}
+
+#nav-bar ul li a:hover
+{
+    color:red !important;
+}
+.navbar{
+    background:#fff; 
+}
+
+.navbar-toggler{
+    border:none !important;
+}
+
+.nav-link{
+    color:#fff;
+    font-weight: 600;
+    font-size:16px;
+}
+*/
+/*----------------------*/
+
+
+
+
+
+/*--------------------*/
+#nav{
+    position: fixed;
+    top:0;
+    left: 0px;
+    width: 100%;
+/*    height: 50px;*/
+/*    padding: 10px 100px;*/
+    box-sizing: border-box;
+    transition:0.5s;
+    z-index: 3;
+}
+
+.black{
+  position:fixed;
+  top:0;
+  background:rgba(0,0,0,0.0);
+  width:100%;
+  height:50px;
+  z-index: 3;
+}
+
+#nav .logo{
+    float: left;  
+}
+
+#nav .logo-img{
+    height: 55px;
+    opacity: 0.5;
+    padding:10px 30px;
+    padding-right: 0px;
+    transition: 0.5s;
+}
+
+#nav .logo-text{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; 
+    opacity: 0.5;
+    vertical-align: -4px;
+    transition: 0.5s;
+}
+
+#nav .black ul{
+  float: right;
+  margin:0;
+  padding: 0;
+  display: flex;
+  list-style-type:none;
+}
+
+#nav .black ul li{
+  display:inline-block;
+  width:100px;
+  list-style: none;
+/*  padding-bottom: 30px;*/
+}
+
+#nav .black ul li a{
+    line-height: 55px;
+    color: rgba(255,255,255,0.60);
+    padding: 5px 6px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.5), 0px 0px 60px rgba(0,0,0,0.0);
+}
+
+#nav ul li .active,
+#nav ul li a:hover{
+    color: rgba(255,255,255,0.90);
+}
+
+#nav .blue{
+  position:fixed;
+  top:0;
+  background-color:rgba(0,0,0,0.80);
+  width:100%;
+  height:50px;
+}
+
+
+
+/*--======================== slider =======================--*/
+
+/*
+#slider{
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.carousel-inner{
+    height: 110vh;  
+    opacity: 1;
+}
+
+#slider img{
+    z-index: -5;
+}
+*/
+
+/*---------------------------*/
+/* Carousel base class */
+.carousel {
+  /*height: 500px;*/
+    height: 100vh;
+    position: relative;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    /*height: 500px;*/
+    height: 100vh;
+/*    background-color: #777;*/
+    position: relative;
+}
+
+.carousel-inner > .item > img {
+    min-height: 100vh;
+/*
+    width: 100%;
+    min-width: 830px;
+    min-height: 500px;
+*/
+}
+
+#myCarousel .order-btn{
+/*    font-family: 'Roboto', sans-serif; */
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-weight: 600;
+    z-index:2; 
+    border: 0.1em solid rgba(255,255,255,0.9);
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.45);
+    color: rgba(255,255,255,0.95);
+}
+
+#myCarousel .order-btn:hover{
+    color: rgba(34,34,34,1.0);
+    background-color: rgba(255,255,255,0.85);
+    transition-duration: 0.5s;
+    border: none; 
+    text-align: center;
+    display: inline-block;
+    padding-top: 1px;
+    text-decoration: none;
+}
+
+/*--------- slide 1 -----------*/
+#slide1{
+    width: 100vw;
+    height: 100vh;
+    /*background-image: url(images/bg_02.jpg);*/
+}
+
+/*
+#myCarousel .brand{
+    height: 100px;
+    border: 1px solid red;
+    z-index: 10;
+}
+*/
+
+#myCarousel .active .logo{
+    height: 6.2rem;
+/*
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+*/
+    position: absolute;
+/*    top: 22.3%;*/
+    top: 115px;
+    left: 42.8%;
+    opacity:0.7;
+}
+
+#myCarousel .active .sub-title{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255,255,255,1.00);
+    text-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    font-size: 2.6rem;
+    font-weight: bolder;
+    opacity: 0.85;
+    position: absolute;
+    top: 202px; 
+/*    top: 33.3%;*/
+    left: 43.3%;
+}
+
+#myCarousel .active .title{
+    color: rgba(255,255,255,1.00);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 9.7rem;
+    text-shadow: 0px 0px 30px rgba(0,0,0,0.55);
+    opacity: 0.97;
+    position: absolute;
+    top:275px;
+/*    top:44.5%;*/
+    left: 38%;   
+}
+
+#myCarousel .active .description{
+    color: #fff;
+    font-size: 13.2px;
+    line-height: normal;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.9),0px 0px 20px rgba(0,0,0,0.9);
+    width: 42%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top: 455px;
+/*    top: 69%;*/
+    left:30%;
+}
+#myCarousel .active .order-btn-1{
+    position: absolute;
+/*    top:80%;*/
+    top:530px;
+    left:43.5%;  
+    text-shadow: 0px 0px 14px rgba(0,0,0,1.0),0px 0px 14px rgba(0,0,0,1.0);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4),0px 0px 40px rgba(0,0,0,0.9);
+}
+
+#myCarousel .active .order-btn-1:hover{
+    text-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+}
+
+/*--------- slide 2 -----------*/
+#slide2{
+    width: 100vw;
+    height: 100vh;
+    /*background-image: url(images/bg_1.jpg);*/
+}
+
+#myCarousel .item-2 .title{
+    font-size: 5.25rem;
+    text-shadow: 7px 7px 25px rgba(0,0,0,1.0);
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top:146px;
+/*    top: 18.5%;*/
+    left: 7.5%;
+}
+
+#myCarousel .item-2 .sub-title{
+    font-size: 1.4rem;
+    color:rgba(255,255,255,1.0);
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+    font-family: 'Roboto', sans-serif; 
+    width: 38%;
+    line-height: normal;
+    position: absolute;
+    top: 260px;
+/*    top: 33%;*/
+    left: 7.5%;
+    
+}
+
+#myCarousel .item-2 .description{
+    font-size: 0.9rem;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+    width: 42.0%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top: 331px;
+/*    top: 42%;*/
+    left: 7.5%;
+}
+
+#myCarousel .order-btn-2{
+    position: absolute;
+    top:426px;
+/*    top:54%;*/
+    left:7.5%;   
+}
+
+#myCarousel .order-btn-3{
+    position: absolute;
+    top:426px;
+/*    top:54%;*/
+    left:25.5%;   
+}
+
+/*--------- slide 3 -----------*/
+#slide3{
+    width: 100vw;
+    height: 100vh;
+    /*background-image: url(images/1024.png);*/
+}
+
+
+
+/*--==================== Card Showcaase =====================--*/
+
+#card-showcase{
+/*    border: 1px red solid;*/
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-image:url("html_&_css/images/snow-20-P3.png");
+    background-size: 119%;
+    background-position: 0 60px;
+    position: relative;
+}
+
+#card-showcase .subtitle{
+    opacity: 0.8;
+}
+
+.text{
+    width:100%;
+    font-family: 'Roboto', sans-serif; 
+    text-align: center;
+    padding:20px;
+}
+
+#card-showcase .card-container{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    width:80%;
+    grid-gap:2em;
+    grid-auto-rows: minmax(100px, auto);
+    margin:auto;
+}
+
+#card-showcase .card{
+    background-color: rgba(255,255,255,0.75);
+}
+
+#card-showcase .icon-group{
+    padding-top: 15px;
+}
+
+#card-showcase .fas{
+    padding-right:3px;
+    opacity: 0.5;
+}
+
+#card-showcase .image-1{
+   height: 100%;
+}
+
+#card-showcase .button-container{
+    margin:auto;
+    padding-top:50px;
+    padding-bottom: 20px;
+    text-align:center;
+}
+
+#card-showcase .order-btn{
+/*    font-family: 'Roboto', sans-serif; */
+    display: inline-block;
+    text-decoration: none;
+    width: 220px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-weight: 600;
+    z-index:2; 
+    border: 1.6px solid rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.03);
+    color: rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    padding-left: 4px;
+}
+
+#card-showcase .order-btn:hover{
+    color: rgba(255,255,255,0.95);
+    background-color: rgba(0,0,0,0.7);
+    transition-duration: 0.5s;
+    border: none; 
+    text-align: center;
+    display: inline-block;
+    padding-top: 1px;
+    text-decoration: none;
+}
+
+#card-showcase .order-btn .fa-chevron-right{
+    color: rgba(0,0,0,0.8);
+    font-size: 18px;
+    padding-left: 8px;
+    vertical-align: -1.4px;
+}
+
+#card-showcase .order-btn:hover .fa-chevron-right,
+#card-showcase .order-btn.hover .fa-chevron-right{
+    color:rgba(255,255,255,0.95);
+    vertical-align: -2px;
+}
+
+
+#card-showcase .title{
+    width: 100%;
+    coor:#111;
+    font-weight:600;
+    padding-bottom: 0;
+}
+
+#card-showcase .is-4{
+    width:100%;
+}
+
+#card-showcase span{
+/*    width:80%;*/
+    opacity: 0.8;
+    font-weight:500;
+}
+
+#card-showcase .media-content{
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid rgba(0,0,0,0.1);
+}
+
+#card-showcase .content{
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+#card-showcase .content a{
+    color:#515151;
+}
+
+#card-showcase .date{
+    font-size:12px;
+    opacity: 0.5;
+}
+
+#card-showcase .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*--===================== Countdown =====================*/
+#day-countdown{
+    background: #000 url("html_&_css/images/dubainye2020-P.jpg");
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.countdown-container{
+    height:100vh;
+    width:87vw;
+    margin:auto;
+    background-image:url("html_&_css/images/dubainye2020-P.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:0 50px 50px rgba(0,0,0,0.5),
+               0 0 0 100px rgba(0,0,0,0.1);
+}
+
+.countdown-container h2{
+    text-align: center;
+    font-size: 10em;
+    line-height: 0.8em;
+    color: rgba(255,255,255,0.97);
+    margin-top:-80px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    text-shadow: 0px 0px 12px rgba(0,0,0,0.6),0px 0px 60px #000;
+    z-index: 1;
+}
+
+.countdown-container h2 span{
+    color: rgba(255,255,255,0.92);
+    display:block;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 0.2em;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 0px 0px 8px #000,0px 0px 30px #000;
+    z-index: 1;
+}
+
+.countdown{
+    display:flex;
+    margin-top:70px;
+}
+
+.countdown div{
+    position: relative;
+    width:100px;
+    height: 95px;
+    line-height: 100px;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    margin:0 15px;
+    font-size: 3em;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+
+.countdown div:before{
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+/*    background: rgba(217,191,61,0.85);*/
+    background: rgba(227,200,65,0.85);
+    color: rgba(0,0,0,0.85);
+    font-size: 0.35em;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.countdown #day:before{
+    content: 'Days';
+}
+
+.countdown #hour:before{
+    content: 'Hours';
+}
+
+.countdown #minute:before{
+    content: 'Minutes';
+}
+
+.countdown #second:before{
+    content: 'Seconds';
+}
+
+
+/*======================== Contact =======================*/
+#contact{
+/*    background-color: #eee;*/
+    color:#777;
+    background-image: url("html_&_css/images/mountain.jpg");
+    background-size: cover;
+    position: relative;
+    height: 110vh;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#contact .container{
+    width:75%;
+    margin:auto;
+}
+
+#contact .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+
+#contact .title{
+    font-size: 3.5em;
+    color: #666;
+    font: "Roboto", sans-serif;
+    font-weight: 600;
+    margin-left: 12px;
+/*    margin-bottom: -300px;*/
+}
+
+
+#contact .form-control{
+    border-radius:0.1em !important;
+    border: none !important;
+}
+
+::placeholder{
+    color:#999 !important;  
+}
+
+#contact .contact-info{
+/*    margin-top: -10px;*/
+    margin-left: 0px;
+    position: absolute;
+    top: 17.0%;
+    left:0;
+    width: 48%;
+}
+
+#contact .follow{
+    width: 100%;
+    background:rgba(255,255,255,0.9);
+    padding:15px;
+    padding-left: 25px;
+    margin:15px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+#contact .contact-info .fas{
+    font-size: 18px;
+    margin-right:8px;
+    color:#999;
+    font-weight: bold;
+    vertical-align: -1px;
+}
+
+#contact .contact-info .fa{
+    font-size: 20px;
+    margin-right:8px;
+    color:#999;
+    font-weight: bold;
+    vertical-align: -1px;
+}
+
+#contact .social .fa{
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+#contact .social .fa:hover{
+    color:#333;
+}
+
+#contact label{
+    height:12px;
+    margin-right: 10px;
+}
+
+#contact input{
+    font-size: 0.85rem;
+    font-family: 'Roboto', sans-serif; 
+}
+
+#contact .contact-info i{
+    margin-right: 20px;
+    height:10px;
+}
+
+#contact input{
+    border:0.1em;
+    padding:25px;
+}
+
+/*--------------*/
+#contact .col-right{
+    
+}
+
+#contact .contact-form{
+/*    padding:15px;*/
+    width: 100%;
+}
+
+#contact .contact-form input{
+    background-color: rgba(255,255,255,0.55);
+    font-family: 'Roboto', sans-serif; 
+}
+
+#contact textarea{
+    border:0.1em;
+    padding:25px;
+    padding-top:15px;
+    font-size: 14px;
+    height:120px;
+    background-color: rgba(255,255,255,0.58);
+}
+
+
+/*------- button -------*/
+#contact .action-button{
+  color: #fff;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.9),0px 0px 24px rgba(0,0,0,0.9);
+  background: none;
+  border: 0.11em solid rgba(255,255,255,1.0);
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.4),0px -10px 10px rgba(0,0,0,0.1);
+  border-radius: 0.1em;
+  cursor: pointer;
+  min-width: 200px;
+  font: 700 14px/40px "Roboto", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;  
+  padding:3px;
+  margin-top: 12px;
+  position: absolute;
+  left:67%;
+}
+
+#contact .action-button:hover{
+    color: rgba(34,34,34,0.8);
+    background-color: rgba(255,255,255,0.85);
+    text-shadow: none;
+    border: none;
+}
+
+#contact .next .fas{
+    font-size: 20px;
+    opacity: 0.9;
+    margin:0 0 0 10px;
+    vertical-align: -1.5px;
+}
+
+
+/*-------------------------footer-------------------------*/
+.footer-with-bg{
+    color:rgba(255,255,255,0.8);
+    font-size: 0.8em;
+    text-align: center;
+    padding:0.3em 0 0.4em 0;
+    background-color:rgba(0,0,0,0.7);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+/*    top:96.5%;*/
+}
+
+
+
+/*--------------------------------*/
+.fixed-action-btn{
+    right: auto;
+    margin-left: 5%;
+}
+
+
+/*=======================================================*/
+/*==================== Responsiveness ==================*/
+
+@media screen and (max-width:768px){
+.carousel {
+    height: 45vh;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 45vh;
+}
+
+.carousel-inner > .item > img {
+    min-height: 45vh;
+}
+
+#myCarousel .order-btn{
+    width: 19%;
+    height: 8%;
+    line-height: normal;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 9.2px;
+}
+
+#myCarousel .order-btn:hover{
+   line-height: normal;
+    padding-top: 10px;
+    background-color: rgba(255,255,255,0.95);
+}
+
+/*--------- slide 1 -----------*/
+#myCarousel .active .logo{
+   height: 4rem;
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    opacity:0.7;
+}
+
+#myCarousel .active .sub-title{
+      font-size: 1.6rem;
+    font-weight: bolder;
+    top: 30%;
+    left: 41%;
+}
+
+#myCarousel .active .title{
+    font-weight: bolder;
+    font-size: 6rem;
+    top:39%;
+    left: 35%;   
+}
+
+#myCarousel .active .description{
+     font-size: 5px;
+    font-weight: lighter;
+    opacity: 0.8;
+    width: 55%;
+    top: 63%;
+    left:22%;
+}
+    
+#myCarousel .active .order-btn-1{
+     top:80%;
+    left:40%;  
+}
+
+/*--------- slide 2 -----------*/
+#myCarousel .second-slide{
+    max-width: 117%;
+}
+        
+#myCarousel .item-2 .title{
+    font-size: 3rem;
+    top: 18.5%;
+    left: 7.5%;
+}
+
+#myCarousel .item-2 .sub-title{
+    font-size: 1rem;
+    width: 50%;
+    top: 32%;
+    left: 7.5%;
+}
+
+#myCarousel .item-2 .description{
+    font-size: 5px;
+    font-weight: lighter;
+    width: 48%;
+    opacity: 0.7;
+    top: 42%;
+    left: 7.5%;
+}
+
+#myCarousel .order-btn-2{
+    top:61%;
+    left:7.5%;   
+    opacity: 0.8;   
+}
+
+#myCarousel .order-btn-3{
+     position: absolute;
+    top:61%;
+    left:29.7%;   
+    opacity: 0.8;
+}
+
+/*--------- slide 3 -----------*/
+#myCarousel .third-slide{
+    width: 100%;
+}
+ 
+    
+/*--========== Tablet: Card Showcaase =============--*/
+#card-showcase{
+    padding-top: 60px;
+    padding-bottom: 75px;
+    padding-right: 2rem;
+    background-size: 400%;
+    background-position: -850px -150px;
+}
+
+.text{
+    width:100%;
+    padding:20px;
+}
+
+#card-showcase .card-container{
+    grid-template-columns:50% 50%;
+    width:80%;
+}
+
+#card-showcase .icon-group{
+    padding-top: 4px;
+}
+
+#card-showcase .button-container{
+    padding-top:30px;
+}
+
+#card-showcase .title{
+    opacity: 0.8;
+    font-size: 2em;
+}
+
+#card-showcase .subtitle{
+    font-size: 1.1em;  
+    opacity: 0.7;
+}
+    
+#card-showcase .is-4{
+    font-size: 21px;
+    width:90%;
+}
+    
+#card-showcase .is-4 span{
+    font-size: 14px; 
+}  
+
+#card-showcase .content{
+    font-size: 11px;
+}
+
+/*--========== Tablet Countdown ==========*/
+#day-countdown{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-position: -225px 0px;
+    overflow: hidden;
+}
+
+.countdown-container{
+    height:81vh;
+    width:80vw;
+    background-position: -225px 0px;
+}
+
+.countdown-container h2{
+    font-size: 9.5em;
+}
+
+.countdown-container h2 span{
+    font-size: 0.18em;
+    opacity: 0.85;
+}
+
+.countdown{
+    margin-top:70px;
+}
+
+.countdown div{
+    width:95px;
+}
+
+/*=============== Tablet Contact =============*/
+    
+ #contact{
+    height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+   
+#contact .container{
+    width:80%;
+    margin:auto;
+}
+
+#contact .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+
+}
+
+#contact .bg-square{
+    height: 80%;
+    width:80%;
+}
+
+#contact .title{
+    font-size: 2.8em;
+    text-align: center;
+}
+
+#contact .contact-form{
+    margin-top: -5px;
+    width: 95%;
+}
+    
+    #contact .form-group{
+/*        height: 37px;*/
+    }
+    
+#contact .contact-form input{
+    height: 37px;
+    padding: 10px;
+    padding-left: 14px;
+    font-size: 9px;
+    background-color: rgba(255,255,255,0.95);
+}
+
+#contact textarea{
+    padding:10px;
+    padding-left:14px; 
+    height: 92.25px;
+    font-size: 9px;
+    background-color: rgba(255,255,255,0.95);
+}
+
+
+#contact .form-control{
+    border-radius:0.1em !important;
+    border: none !important;
+}
+    
+#contact .follow{
+    font-size: 9px;
+    padding: 10px;
+    padding-left: 14px;
+    height: 37px;
+}  
+
+#contact .contact-info{
+    width: 45%;    
+} 
+    
+#contact .contact-info .fas{
+    font-size: 14px;
+    margin-right:8px;
+    color:#999;
+    font-weight: bold;
+    vertical-align: -1px;
+}
+
+#contact .contact-info .fa{
+    font-size: 16px;
+    margin-right:8px;
+    color:#999;
+    font-weight: bold;
+    vertical-align: -1px;
+}
+
+#contact .social-icon .fa{
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+/*------- button -------*/
+#contact .action-button{
+  opacity: 1;
+  background-color: rgba(255,255,255,0.2);
+  min-width: 160px;
+  font: 700 10px/28px "Roboto", sans-serif;
+  padding:3px;
+  margin-top: 2px;
+  left: 62.6%;
+}
+
+#contact .action-button:hover{
+    color: rgba(34,34,34,0.8);
+    background-color: rgba(255,255,255,0.85);
+    text-shadow: none;
+    border: none;
+}
+
+#contact .next .fas{
+    font-size: 18px;
+    opacity: 0.9;
+    margin:0 0 0 10px;
+    vertical-align: -1.5px;
+}    
+}
+
+
+/*======================================================*/
+/*====================== Phone ========================*/
+@media screen and (max-width: 600px){
+
+.black{
+  height:28px;
+  z-index: 3;
+}
+
+#nav .logo{
+    float: left;  
+}
+
+#nav .logo-img{
+    height: 35px;
+    margin-top: -4px;
+    padding:9px 9px;
+    padding-right: 0px;
+}
+
+#nav .logo-text{
+    font-size: 9px;
+    vertical-align: 2px;
+}
+
+#nav .black ul{
+    position: absolute;
+    top: -50%;
+    left: 43.5%;
+}
+
+#nav .black ul li{
+  width:50px;
+}
+
+#nav .black ul li a{
+    font-size: 9px;
+}
+
+#nav .blue{
+  height:28px;
+}
+
+/* -------------- Phone Carousel -------------- */
+.carousel {
+    height: 27vh;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 27vh;
+}
+
+.carousel-inner > .item > img {
+    min-height: 27vh;
+}
+
+#myCarousel .order-btn{
+    width: 29%;
+    height: 12%;
+    line-height: normal;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 4px;
+}
+
+#myCarousel .order-btn:hover{
+    line-height: normal;
+    padding-top: 10px;
+    background-color: rgba(255,255,255,0.95);
+}
+
+/*--------- slide 1 -----------*/
+#myCarousel .active .logo{
+    height: 1.65rem;
+    top: 22%;
+    left: 42.5%;
+    opacity:0.65;
+}
+
+#myCarousel .active .sub-title{
+    font-size: 0.1rem;
+    top: 32.5%;
+    left: 42.5%;
+    opacity: 0.65;
+}
+
+#myCarousel .active .title{
+    font-size: 3rem;
+    top:41%;
+    left: 36%;   
+}
+
+#myCarousel .active .description{
+    opacity: 0;
+/*
+    font-size: 9px;
+    font-weight: lighter;
+    opacity: 0.8;
+    width: 85%;
+    top: 63%;
+    left:10%;
+*/
+}
+    
+#myCarousel .active .order-btn-1{
+    top:67%;
+    left:36%; 
+    opacity: 0.8;
+}
+
+/*--------- slide 2 -----------*/
+#myCarousel .second-slide{
+    max-width: 119%;
+    left: 0;
+}
+        
+#myCarousel .item-2 .title{
+    font-size: 1.6rem;
+    opacity: 0.95;
+    top: 18%;
+    left: 9%;
+}
+
+#myCarousel .item-2 .sub-title{
+    font-size: 9px;
+    font-weight: 400;
+    line-height: normal;
+    width: 50%;
+    top: 32%;
+    left: 9%;
+}
+
+#myCarousel .item-2 .description{
+    opacity: 0;
+/*
+    font-size: 5px;
+    font-weight: lighter;
+    width: 48%;
+    top: 42%;
+    left: 7.5%;
+*/
+}
+
+#myCarousel .order-btn-2{
+    width: 25%;
+    top:56%;
+    left:9%;    
+}
+
+#myCarousel .order-btn-3{
+    width: 30%;
+    top:56%;
+    left:36%;   
+}
+
+/*--------- slide 3 -----------*/
+#myCarousel .third-slide{
+    width: 100%;
+}
+ 
+    
+/*--========== Phone: Card Showcaase =============--*/
+#card-showcase{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 0px;
+    background-size: 820%;
+    background-position: -1150px 542px;
+}
+
+#card-showcase .is-2{
+    font-size: 1.7rem;
+}   
+ 
+#card-showcase .subtitle{
+    font-size: 0.85rem;   
+}
+    
+.text{
+    width:100%;
+}
+
+#card-showcase .card-container{
+    grid-template-columns:100%;
+    width:70%;
+}
+
+#card-showcase .icon-group{
+    padding-top: 4px;
+}
+
+#card-showcase .order-btn{
+    width: 160px;
+    height: 40px;
+    line-height: normal;
+    font-size: 12px;
+    padding-top: 8px;
+    border: 1.45px solid rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.65);
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.15);
+}
+
+/*--========== Phone Countdown ==========*/
+#day-countdown{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-position: -295px -80px;
+    background-size: 566%;
+}
+
+.countdown-container{
+    height:60vh;
+    width:80vw;
+    background-size: 535%;
+    background-position: -295px -80px;
+}
+
+.countdown-container h2{
+    font-size: 5.8em;
+    line-height: 0.8em;
+    margin-top:0px;
+}
+
+.countdown-container h2 span{
+    letter-spacing: 0px;
+    font-size: 0.13em;
+}
+
+.countdown{
+    margin-top:30px;
+}
+
+.countdown div{
+    width:52px;
+    height: 47px;
+    line-height: 48px;
+    margin:0 6px;
+    font-size: 1.6em;
+}
+
+.countdown div:before{
+    bottom: -20px;
+    height: 20px;
+    font-size: 9px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+
+/*=============== Phone Contact =============*/
+ #contact{
+    height:50rem;
+    padding-top: 70px;
+    padding-bottom: 150px;
+}
+
+#contact .container{
+    width:70%;
+    margin:auto;
+}
+
+#contact .row{
+    grid-template-columns: 105%;
+}
+
+#contact .title{
+    text-align: center;
+    margin-right: 32px;
+    font-size: 2em;
+}
+
+#contact .contact-form{
+    width: 96.2%;
+    position: absolute;
+    left: 0%;
+    top: 590%;
+}
+
+#contact .form-control{
+    border-radius:0.1em !important;
+    border: none !important;
+}
+
+#contact .contact-info{
+    width: 95%; 
+    left: -15px;
+    position: absolute;
+    top: 40px;
+} 
+    
+/*------- button -------*/
+#contact .action-button{
+    background-color: rgba(255,255,255,0.1);
+  left:17.5%;
+}    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

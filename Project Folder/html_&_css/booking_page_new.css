@@ -1,0 +1,586 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+
+.bg{
+    height:100vh;
+    z-index: -1;
+}
+
+
+/*font Variables*/
+/*Color Variables*/
+/*@import url("https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700,900");*/
+.multi_step_form {
+/*  background: #f6f9fb;*/
+/*  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 182, 0.2)), url("images/photo-1463975488588-6be98f62c3ea.jpg");*/
+/*  height: 100vh;*/
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url("images/snowy.jpg");
+/*  background-image:  url("images/photo-1463975488588-6be98f62c3ea.jpg");*/
+  background-size: cover;
+  display: block;
+  overflow: hidden;
+}
+
+.multi_step_form #msform {
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+  min-height: 100vh;
+  max-width: 810px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.5);
+  z-index: 1;
+}
+
+/*--------------- tours thumbnial --------------*/
+/*------------------- Select Tour Thumbnail ----------------------*/
+.select-tour{
+    width:108.29%;
+    padding-top: 4rem;
+    padding-bottom: 14px;
+    left: -4px;
+    position: relative;
+/*
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+*/
+}
+
+.select-tour .col-xs-4{
+    margin-right: -14px;
+}
+
+.select-tour .img-responsive{
+
+}
+
+.image-radio {
+    cursor: pointer;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+/*    border: 4px solid transparent;*/
+    border: 1px solid rgba(153,153,153,0.50);
+    border-radius: 0.1rem;
+    margin-bottom: 0;
+    outline: 0;
+}
+.image-radio input[type="radio"] {
+    display: none;
+}
+.image-radio-checked {
+/*    border-color: rgba(34,34,34,0.2);*/
+}
+
+.image-radio .glyphicon{
+  position: absolute;
+/*  color: rgba(34,34,34,0.50);*/
+    color: rgba(255,255,255,1.0);
+/*  background-color: rgba(255,255,255,1.0);*/
+  border: 1px solid rgba(0,0,0,0.1);
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+/*
+  border-top: none;
+  border-right: none;
+*/
+  padding: 5px;
+  top: 0px;
+  right: 15px;
+  border-radius: 0.05em;
+  z-index: 3;
+}
+
+.image-radio-checked .glyphicon {
+  display: block !important;
+}
+
+.fieldset-1 .tours-thumbnial{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+.thumbnial-img{
+    height:86px;
+    margin:auto;
+}
+
+.select-tour .box{
+    border: 1px solid rgba(255,255,255,0.25);
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 0.1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+
+/*------======--------*/
+.date-priceplan{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns:2fr 1.5fr;
+    grid-column-gap: 1em;
+}
+
+.fieldset-1 .textarea{
+    display: grid;
+    grid-template-columns:1fr;
+}
+
+/*------------------- Form Body --------------------*/
+.form-control {
+    border: 0;
+}
+
+fieldset input{
+    border: 0;
+}
+
+.multi_step_form #msform .tittle {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.multi_step_form #msform .tittle h2 {
+  font-family:  "Roboto", sans-serif;
+  font-size: 2.5em;
+  color: #555;
+  padding-bottom: 5px;
+  margin-left:38px;
+  font-weight: 600;
+}
+.multi_step_form #msform .tittle p {
+  font: 400 16px/28px "Roboto", sans-serif;
+  color: #777;
+}
+
+.multi_step_form #msform .q {
+  margin-bottom: 3px;
+  text-align: left;
+  margin-left: 18px;
+  font-weight: 500;
+  color: #777;
+  border:none;
+}
+
+.multi_step_form #msform fieldset {
+  border: 0;
+  padding: 20px 105px 0;
+  position: relative;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.multi_step_form #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+.multi_step_form #msform fieldset h3 {
+  font: 500 18px/35px "Roboto", sans-serif;
+  color: #555;
+}
+.multi_step_form #msform fieldset h6 {
+  font: 400 15px/28px "Roboto", sans-serif;
+  color: #777;
+  padding-bottom: 30px;
+}
+.multi_step_form #msform fieldset .intl-tel-input {
+  display: block;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+.multi_step_form #msform fieldset .intl-tel-input .flag-container .selected-flag {
+  padding: 0 20px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  width: 65px;
+  z-index: 10;
+}
+.multi_step_form #msform fieldset .intl-tel-input .flag-container .selected-flag .iti-arrow {
+  border: 0;
+}
+.multi_step_form #msform fieldset .intl-tel-input .flag-container .selected-flag .iti-arrow:after {
+  content: "\f35f";
+  position: absolute;
+  top: 0;
+  right: 0;
+  font: normal normal normal 24px/7px Ionicons;
+  color: #777;
+}
+
+
+.multi_step_form #msform fieldset #phone {
+  padding-left: 80px;
+    
+}
+.multi_step_form #msform fieldset .form-group {
+  padding: 0 10px;
+}
+
+.multi_step_form #msform fieldset .fg_2, .multi_step_form #msform fieldset .fg_3 {
+  display: block;
+  overflow: hidden;
+}
+.multi_step_form #msform fieldset .fg_3 {
+  padding-bottom: 70px;
+}
+.multi_step_form #msform fieldset .form-control, .multi_step_form #msform fieldset .product_select {
+  border-radius: 0.1em;
+  border: 1px solid #d8e1e7;
+  padding: 0 20px;
+  height: auto;
+  font: 400 15px/48px "Roboto", sans-serif;
+  color: #777;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+}
+
+.multi_step_form #msform fieldset .form-control.placeholder, .multi_step_form #msform fieldset .product_select.placeholder {
+  color: #777;
+}
+.multi_step_form #msform fieldset .form-control:-moz-placeholder, .multi_step_form #msform fieldset .product_select:-moz-placeholder {
+  color: #777;
+}
+.multi_step_form #msform fieldset .form-control::-moz-placeholder, .multi_step_form #msform fieldset .product_select::-moz-placeholder {
+  color: #777;
+}
+.multi_step_form #msform fieldset .form-control::-webkit-input-placeholder, .multi_step_form #msform fieldset .product_select::-webkit-input-placeholder {
+  color: #777;
+}
+.multi_step_form #msform fieldset .form-control:hover, .multi_step_form #msform fieldset .form-control:focus, .multi_step_form #msform fieldset .product_select:hover, .multi_step_form #msform fieldset .product_select:focus {
+  border-color: #ccc;
+}
+.multi_step_form #msform fieldset .form-control:focus.placeholder, .multi_step_form #msform fieldset .product_select:focus.placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .form-control:focus:-moz-placeholder, .multi_step_form #msform fieldset .product_select:focus:-moz-placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .form-control:focus::-moz-placeholder, .multi_step_form #msform fieldset .product_select:focus::-moz-placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .form-control:focus::-webkit-input-placeholder, .multi_step_form #msform fieldset .product_select:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .product_select:after {
+  display: none;
+}
+.multi_step_form #msform fieldset .product_select:before {
+  content: "\f35f";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font: normal normal normal 24px/48px Ionicons;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .product_select .list {
+  width: 100%;
+}
+
+.multi_step_form #msform fieldset .file_added {
+  text-align: left;
+  padding-left: 190px;
+  padding-bottom: 60px;
+}
+.multi_step_form #msform fieldset .file_added li {
+  font: 400 15px/28px "Roboto", sans-serif;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .file_added li a {
+  color: #5cb85c;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+}
+.multi_step_form #msform fieldset .file_added li a i {
+  font-size: 22px;
+  padding-right: 8px;
+  position: absolute;
+  left: 0;
+  transform: rotate(20deg);
+}
+
+
+/*------ progressbar -------*/
+.multi_step_form #msform #progressbar {
+  margin-bottom: 6rem;
+/*padding-right: 20px;*/
+  overflow: hidden;
+}
+.multi_step_form #msform #progressbar li {
+  list-style-type: none;
+  color: #999;
+  font-size: 9px;
+  width: calc(100%/3);
+  float: left;
+  position: relative;
+  font: 500 13px/1 "Roboto", sans-serif;
+}
+
+.multi_step_form #msform #progressbar li:nth-child(1):before{
+  font-family: FontAwesome;
+  content: "\f018";
+  font-size: 1.8em;
+}
+
+.multi_step_form #msform #progressbar li:nth-child(2):before {
+/*  content: "\f12f";*/
+  font-family: FontAwesome;
+  content: "\f007";
+  font-size: 1.8em;
+/*  margin-right: 115px;*/
+}
+.multi_step_form #msform #progressbar li:nth-child(3):before {
+/*  content: "\f457";*/
+  font-family: FontAwesome;
+  content: "\f00c";
+  font-size: 1.8em;
+  padding-top: 2px;
+  padding-left: 2px;
+/*    margin-right: 125px;*/
+}
+.multi_step_form #msform #progressbar li:before {
+/*  content: "\f1fa";*/
+  font: normal normal normal 30px/50px Ionicons;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background: #eee;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  position: relative;
+}
+.multi_step_form #msform #progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 10px;
+/*  background: #eaf0f4;*/
+  background: #eee;
+  position: absolute;
+  left: -50%;
+  top: 21px;
+  z-index: -1;
+}
+.multi_step_form #msform #progressbar li:last-child:after {
+  width: 150%;
+}
+.multi_step_form #msform #progressbar li.active {
+  color: #999;
+}
+
+.multi_step_form #msform #progressbar li.active:before, .multi_step_form #msform #progressbar li.active:after {
+  background: #999;
+  color: white;
+/*    margin-right: 100px;*/
+}
+
+
+
+
+
+/*------------ action-button --------------*/
+.multi_step_form #msform .action-button {
+  color: rgba(68,68,68,0.75);
+  background: transparent;
+  border: 0.15rem solid rgba(68,68,68,0.65);
+/*  opacity: 0.9;*/
+  border-radius: 0.1em;
+  cursor: pointer;
+  min-width: 200px;
+  font: 700 14px/40px "Roboto", sans-serif;
+  margin: 0 36px;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  display: inline-block;  
+}
+
+.multi_step_form #msform .action-button:hover{
+  color: #fff;
+  background-color: rgba(68,68,68,0.85);
+  text-decoration: none;
+}
+
+.multi_step_form #msform .next .fas{
+    font-size: 2rem;
+    opacity: 0.6;
+    margin:0 0 0 10px;
+    vertical-align: -3px;
+}
+
+.multi_step_form #msform .previous_button{
+  background: transparent;
+  color: rgba(68,68,68,0.85);
+  border-color: rgba(68,68,68,0.65);
+}
+
+.multi_step_form #msform .previous_button:hover{
+  background-color: rgba(68,68,68,0.85);
+  color: #fff;
+  text-decoration: none;
+}
+
+.multi_step_form #msform .previous_button .fas{
+    font-size: 2rem;
+    opacity: 0.5;
+    margin: 0 10px 0 0;
+}
+
+
+/*-------------------------*/
+
+.fa-check{
+    font-size: 3rem;
+    color: rgba(0,0,0,0.7);
+    padding-top: 50px;
+}
+
+
+/*======================================================*/
+/*=========================================================*/
+/*================= Tablet ================================*/
+@media screen and (max-width: 768px){
+.select-tour .box{
+    border: 1px solid rgba(255,255,255,0.25);
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 0.1rem;
+    height: 2.5rem;
+    width: 2.55rem;
+    position: absolute;
+    top: 0;
+    left: 73%;
+}
+}
+
+
+
+/*======================================================*/
+/*======================================================*/
+/*======================= Phone ==========================*/
+@media screen and (max-width: 600px){
+.multi_step_form #msform {
+  padding-top: 50px;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+/*--------- Phone tours thumbnial --------*/
+/*---- Select Tour Thumbnail ----*/
+
+.select-tour{
+    width:325%;
+    display: grid;
+    grid-template-columns:50% 50%;
+    padding-top: 10px;
+}
+
+.img-2{
+    position: absolute;
+    left: -70%;
+    margin-bottom: 8px;
+}
+    
+.img-4{
+    position: absolute;
+    left: -70%;
+}
+  
+.select-tour .box{
+    left: 72.5%;
+}
+
+/*------==Phone ====--------*/
+.date-priceplan{
+    margin-top: 0px;
+    grid-template-columns:100%;
+}
+    
+.product_select{
+    margin-bottom: 16px;
+}
+    
+.fieldset-1 .textarea{
+    grid-template-columns:1fr;
+    margin-top: -14px;
+}
+
+/*------------------- Form Body --------------------*/
+.form-control {
+    border: 0;
+}
+
+fieldset input{
+    border: 0;
+}
+
+.multi_step_form #msform .tittle h2 {
+  font-size: 2.5em;
+  margin-left: 8px;
+}
+
+.multi_step_form #msform fieldset {
+  padding: 20px 50px;
+}
+
+.multi_step_form #msform fieldset .file_added li a i {
+  font-size: 22px;
+  padding-right: 8px;
+  left: 0;
+  transform: rotate(20deg);
+}
+
+
+/*------ progressbar -------*/
+.multi_step_form #msform #progressbar {
+  width: 110%;
+  margin-bottom: 2rem;
+}
+    
+.multi_step_form #msform #progressbar li {
+  font-size: 9px;
+  font: 500 13px/1 "Roboto", sans-serif;
+  left: -11%
+}
+
+
+/*------------ action-button --------------*/
+.multi_step_form #msform .action-button {
+  min-width: 170px;
+  margin-top: 0.8rem;
+  color: rgba(68,68,68,0.95);
+}
+
+.multi_step_form #msform .previous_button{
+  width: 170px;
+  color: rgba(68,68,68,0.75);
+  border-color: rgba(68,68,68,0.45);
+  margin-bottom: 10px;
+} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

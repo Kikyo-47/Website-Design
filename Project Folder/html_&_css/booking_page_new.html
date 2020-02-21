@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>booking_page_new</title>
+<link rel="stylesheet" href="booking_page_new.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/css/intlTelInput.css">
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+    
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<!--    icon-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+<!-- Multi step form --> 
+<section class="multi_step_form"> 
+  <form id="msform"> 
+    <!-- Tittle -->
+    <div class="tittle">
+      <h2>Booking Form</h2>
+<!--      <p>Please complete this booking process to join a tour</p>-->
+<!--      <p>Please pick your journey and select your preferences</p>-->
+    </div>
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Tour Booking</li>  
+      <li class="2nd">Personal Detail</li> 
+      <li>Booking Confirm</li>
+    </ul>
+      
+<!--====================== Page 1 ====================-->
+<fieldset class="fieldset-1">
+<!--
+      <h3>Selecting Tour</h3>
+      <h6>Please pick your journey and select your preferences</h6> 
+-->
+        
+<div class="select-tour">
+     <div class="col-xs-4 col-sm-3 col-md-3 nopad text-center">
+    <label class="image-radio">
+        <img class="img-responsive" src="images/radio-snow.jpg" alt="" >
+        <input type="radio" name="image_radio" value="1" />
+        <i class="glyphicon glyphicon-ok hidden"></i>
+        <div class="box"></div>
+    </label>
+</div>
+<div class="col-xs-4 col-sm-3 col-md-3 nopad text-center img-2">
+    <label class="image-radio">
+        <img class="img-responsive" src="images/radio-park.jpg" alt="">
+        <input type="radio" name="image_radio" value="2" />
+        <i class="glyphicon glyphicon-ok hidden"></i>
+        <div class="box"></div>
+    </label>
+</div>
+<div class="col-xs-4 col-sm-3 col-md-3 nopad text-center">
+    <label class="image-radio">
+        <img class="img-responsive" src="images/radio-cliff.jpg"  alt="">
+        <input type="radio" name="image_radio" value="3" />
+        <i class="glyphicon glyphicon-ok hidden"></i>
+        <div class="box"></div>
+    </label>
+</div>
+<div class="col-xs-4 col-sm-3 col-md-3 nopad text-center img-4">
+    <label class="image-radio">
+        <img class="img-responsive" src="images/radio-beach.jpg"  alt="">
+        <input type="radio" name="image_radio" value="4" />
+        <i class="glyphicon glyphicon-ok hidden"></i>
+        <div class="box"></div>
+    </label>
+</div>
+<!------------->
+</div>
+        <div class="form-group date-priceplan"> 
+        <select class="product_select">
+          <option data-display="Select date">Select date</option> 
+          <option>2020/02/15 - 2020/02/16</option>
+          <option>2020/02/22 - 2020/02/23</option> 
+          <option>2020/02/29 - 2020/03/01</option>
+          <option>2020/03/07 - 2020/03/08</option>
+        </select>
+        <select class="product_select">
+          <option data-display="Select price plan">Select date</option> 
+          <option>Standard- £160</option>
+          <option>Upgraded- £200</option> 
+          <option>Superb- £225</option>
+          <option>Luxury- £250</option>
+        </select>
+         </div> 
+<!--
+      <div class="form-row">  
+          <div class="form-group col-md-9 fg_2"> 
+        <input type="text" class="form-control" placeholder="Is there any children under 6 years old accompany?">
+      </div>
+          <div class="form-group col-md-3 fg_2"> 
+        <select class="product_select">
+          <option data-display="Answer">Answer</option> 
+          <option>Yes</option>
+          <option>No</option> 
+        </select>
+      </div> 
+      </div>
+-->
+        <div class="form-group textarea fg_2"> 
+            <textarea type="text" class="form-control" placeholder="Message"></textarea>
+      </div> 
+       
+      <button type="button" class="next action-button" >Continue<i class="fas fa-chevron-right" style="vertical-align: -3px;"></i></button>  
+    </fieldset>
+      
+<!--====================== Page 2 ====================-->
+    <fieldset>
+      <div class="form-row"> 
+        <div class="form-group col-md-6">  
+           <input type="text" class="form-control" placeholder="First name"> 
+        </div>  
+        <div class="form-group col-md-6"> 
+          <input type="text" class="form-control" placeholder="Last name">
+        </div> 
+      </div> 
+      <div class="form-row"> 
+        <div class="form-group col-md-12 ">
+           <input type="email" class="form-control" placeholder="Email"> 
+        </div>  
+      </div> 
+    <div class="form-row"> 
+        <div class="form-group col-md-6">  
+           <input type="date" class="form-control" placeholder="Birthday"> 
+        </div>  
+        <div class="form-group col-md-6"> 
+          <input type="text" class="form-control" placeholder="Gender">
+        </div> 
+      </div>
+    <div class="form-row"> 
+        <div class="form-group col-md-6 tel">  
+          <input type="tel" id="phone" class="form-control" placeholder="+880"> 
+        </div>  
+        <div class="form-group col-md-6 tel"> 
+          <input type="text" class="form-control" placeholder="Phone number">
+        </div> 
+      </div> 
+        
+      <div class="form-row fg_2">  
+        <div class="form-group col-md-12"> 
+          <input type="text" class="form-control" placeholder="Street Address">
+         </div>    
+      </div>
+      <div class="form-row"> 
+        <div class="form-group col-md-4">  
+           <input type="text" class="form-control" placeholder="City"> 
+        </div>  
+        <div class="form-group col-md-4"> 
+          <input type="text" class="form-control" placeholder="State/Province">
+         </div>   
+        <div class="form-group col-md-4">  
+           <input type="text" class="form-control" placeholder="Country"> 
+        </div> 
+      </div>
+    
+      <button type="button" class="action-button previous previous_button btn-2"><i class="fas fa-chevron-left" style="vertical-align: -3px;"></i>Back</button>
+        
+      <button type="button" class="next action-button btn-3" >Finish<i class="fas fa-chevron-right" style="vertical-align: -3px;"></i></button> 
+    </fieldset>  
+    
+        
+<!--====================== Page 3 ====================-->
+     <fieldset>   
+      
+<!--      <h3>Thank you for your order</h3>-->
+      <div class="passport">
+        <i class="fas fa-check"></i>
+
+        <h4>Order Confirmed<br><br></h4> 
+<!--          <h6>Thank you for your order</h6>-->
+      </div>
+      <div class="input-group"> 
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="upload">
+        </div>
+      </div>
+    </fieldset>  
+  </form> 
+</section>
+
+
+    
+<!--========================= JS ========================-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+    
+<script>
+$(document).ready(function(){
+    // add/remove checked class
+    $(".image-radio").each(function(){
+        if($(this).find('input[type="radio"]').first().attr("checked")){
+            $(this).addClass('image-radio-checked');
+        }else{
+            $(this).removeClass('image-radio-checked');
+        }
+    });
+
+    // sync the input state
+    $(".image-radio").on("click", function(e){
+        $(".image-radio").removeClass('image-radio-checked');
+        $(this).addClass('image-radio-checked');
+        var $radio = $(this).find('input[type="radio"]');
+        $radio.prop("checked",!$radio.prop("checked"));
+
+        e.preventDefault();
+    });
+});
+</script>
+<!--    ----->
+
+
+<!--    ------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/js/intlTelInput.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script><script  src="js/booking_page_new.js"></script> 
+</body>
+</html>

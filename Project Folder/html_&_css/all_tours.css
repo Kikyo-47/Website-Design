@@ -1,0 +1,3332 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.tile.is-gapless .tile.is-parent {
+  padding: 0;
+}
+.tile.is-gapless .tile.is-vertical > .tile.is-child {
+  margin-bottom: 0 !important;
+}
+.tile.is-gapless .notification {
+  border-radius: 0;
+}
+
+
+
+
+/*====================== Main  General =====================*/
+
+article.tile {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  text-align: center; 
+}
+
+article.tile * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+
+
+/*----------------- Title ----------------*/
+article.tile .title,
+article.tile .title {
+  width:100%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+article.tile:hover .title,
+article.tile.hover .title {
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+
+
+/*-------------- Sub-title -----------------*/
+.sub-title{
+    color:rgba(0,0,0,0.8);
+    padding:0.1em 0.6em;
+    font-family: 'Roboto', sans-serif; 
+}
+
+article.tile .sub-title,
+article.tile .sub-title {
+  color: #000;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+article.tile:hover .sub-title,
+article.tile.hover .sub-title {
+    opacity:0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transition-duration:0.5s;
+}
+
+
+/*---------------------- Figure -------------------*/
+article.tile:hover .figure,
+article.tile.hover .figure {
+    opacity:0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transition-duration:0.5s;
+}
+
+
+article.tile .figure-text,
+article.tile .figure-text {
+  color: #fff;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+article.tile:hover .figure-text,
+article.tile.hover .figure-text {
+    opacity:0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transition-duration:0.5s;
+}
+
+article.tile .check-box-text,
+article.tile .check-box-text {
+  color: #fff;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+article.tile:hover .check-box-text,
+article.tile.hover .check-box-text{
+    opacity:0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transition-duration:0.5s;
+}
+
+/*---- figure-after ---*/
+
+article.tile .figure-after,
+article.tile .figure-after {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+article.tile:hover .figure-after,
+article.tile.hover .figure-after {
+    z-index: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transition-duration:0.5s; 
+}
+
+
+
+
+/*-------------- Description ----------------*/
+article.tile .description,
+article.tile .description {
+  font-family: 'Roboto', sans-serif; 
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+article.tile:hover .description,
+article.tile.hover .description {
+    opacity: 0.9;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transition-duration:0.4s;
+}
+
+
+/*---------------- Background Image -------------*/
+article.tile .bg {
+    vertical-align: top;
+    opacity:0.95;
+}
+
+article.tile:hover .bg,
+article.tile.hover .bg {
+  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+
+/*----------------- p Tag ------------------*/
+article.tile p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 34px;
+  color: #fff;
+  line-height: 60px;
+/*  background: #ffffff;*/
+/*  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+/*  transition: all 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);*/
+}
+
+article.tile:hover p,
+article.tile.hover p {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+/*  transition: all 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);*/
+}
+
+
+/*------------- order button -------------*/
+.order-btn {
+/*  display: inline-block;*/
+  font-family: 'Roboto', sans-serif; 
+  text-align: center;
+  text-transform: uppercase;
+  border: 0.1em rgba(255,255,255,0.85) solid;
+  border-radius: 2px;
+  color: rgba(255,255,255,0.85);
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.6);
+  position: absolute;
+/*  overflow: hidden;*/
+  z-index: 1;
+}
+
+ .order-btn:hover{
+    color: #333;
+    background-color: rgba(255,255,255,0.9);
+    transition: 0.5s;
+}
+
+article.tile .order-btn,
+article.tile .order-btn {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+article.tile:hover .order-btn,
+article.tile.hover .order-btn {
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    transition-duration:0.1s;
+    
+}
+
+
+
+
+
+
+/*========================= Header ========================*/
+#header{
+    height: 8rem;
+    overflow: hidden;
+    position: relative;
+/*
+    background-image:url("images/homepage-showcase-bg1.jpg");
+    background-size: cover;
+*/
+}
+
+#header .header-img{
+/*    display:block;*/
+/*    content:'';*/
+/*    position: absolute;*/
+    top:10px;
+    left:0px;	
+    filter: brightness(0.5);
+    overflow: hidden;
+    
+}
+
+#header .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0rem;
+}
+
+#header .title{
+    color:#fff;
+    font-size: 40pt;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; 
+    padding: 1rem;
+    padding-left: 0rem;
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+#header span{
+    vertical-align: 3px;
+}
+
+
+#header .description{
+    color: #fff;
+    width: 21%;
+    opacity: 0.7;
+    font-size: 14px;
+    text-shadow: 0px 0px 20px rgba(0,0,0,0.9);
+    font-family: 'Roboto', sans-serif; 
+    line-height: normal;
+    position: absolute;
+    top: 41.0%;
+/*    left: 30.5%;*/
+    left: 483px;
+}
+
+/*========================= Tiles ========================*/
+#container{
+    width: 100vw;
+}
+
+
+
+
+/*----------------------- Tile-1 ---------------------*/
+.tile-1{
+/*    height:60vh;*/
+    height:34rem;
+    width: 76.05rem;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.tile-1 .image-container{
+    height: 34rem;
+    position: relative;
+/*    border: 1px solid blue;*/
+}
+
+.tile-1 .bg{
+    max-width: 130%;
+    display:block;
+    content:'';
+    position: absolute;
+    top:-220px;
+    left: -230px;
+}
+
+
+
+/*-------------- Title -----------*/
+.tile-1 .title{
+    font-family: 'Roboto', sans-serif; 
+/*    font-size:5.9rem;*/
+    font-size:94px;
+    font-weight: 600;
+    position:absolute;
+    top:41%;
+    left: 45.5%;
+    z-index: 1;
+    opacity: 1;
+}
+
+article.tile:hover .title-1{
+    top:37%;
+    left: 50%;
+    font-size:36pt;
+    opacity: 0.9;
+}
+
+.tile-1 .sub-title{
+    font-size: 18pt;
+    font-weight: bold;
+    opacity: 0.3;
+    top:59%;
+    left:34.5%;
+}
+
+article.tile:hover .description-1{
+    top:53%;
+}
+
+/*-------- Figure -------*/
+/*
+.tile-1 .banner-container{
+    position: relative;
+}
+*/
+
+.tile-1 .banner{
+    position: absolute;
+    top:53.5%;
+    left:23%;
+    height: 60px;
+    opacity: 0.8;
+}
+
+
+.snowman-figure-text .line-1{
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top:55.25%;
+    left:59%;
+    opacity: 1;
+    font-size:24pt;
+    text-transform: uppercase;
+    font-weight: bolder;
+    z-index: 1;
+    text-shadow: 0px 0px 31px rgba(0,0,0,0.6),0px 0px 80px rgba(0,0,0,0.5);
+}
+
+.snowman-figure-text .line-2{
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top:65.4%;
+    left:59%;
+    opacity: 1;
+    font-size:46pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 1;
+    text-shadow: 0px 0px 12px rgba(0,0,0,0.3),0px 0px 60px rgba(0,0,0,0.4);
+}
+
+.snowman-figure-text .line-3{
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top:75%;
+    left:59%;
+    opacity: 1;
+    font-size:26pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 1;
+    text-shadow: 0px 0px 21px rgba(0,0,0,0.8),0px 0px 80px rgba(0,0,0,0.8);
+}
+
+/*
+.snowman-figure-text .line-4{
+    position: absolute;
+    top:76%;
+    left:55%;
+    opacity: 0.8;
+    font-size:11pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 1;
+}
+*/
+
+/*--- These are imgs not icons-----*/
+.tile-1 .snowman{
+    position: absolute;
+    height:90px;
+    top:30.5%;
+    left:71%;
+    opacity: 0.95;
+    border-bottom: 2px  dotted #fff;
+    padding:14px;
+}
+
+.tile-1 .ski-equip{
+    position: absolute;
+    height:90px;
+    top:48%;
+    left:71.75%;
+    opacity: 1;
+    border-bottom: 2px dotted #fff;
+    padding:10px;
+    padding-bottom:18px;
+}
+
+.tile-1 .skateboard{
+    position: absolute;
+    height:80px;
+    top:65%;
+    left:71%;
+    opacity: 0.95;
+    padding:12px;
+}
+
+/*-- ski --*/
+.tile-1 .ski{
+    height:240px;
+    position: absolute;
+    top:35%;
+    left:54%;
+    opacity: 0.55;
+}
+
+.ski-after{
+    position: absolute;
+    top:50%;
+    height:360px;
+}
+
+article.tile:hover .ski-after{
+    opacity: 0.1;
+}
+
+/*----- check-box -------*/
+.tile-1 .check-box-gup{
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top:67%;
+    left:22.6%;
+}
+
+.tile-1 .check-box-gup-line-1{
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 7px;
+    width:100%;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+}
+
+.tile-1 .check-box-1{
+/*    position: absolute;*/
+    height:34px;
+    vertical-align: -10px;
+    opacity: 1;
+}
+
+.tile-1 .check-box-gup-line-2{
+    width:110%;
+    line-height: 47px;
+    position: absolute;
+    top:25px;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+}
+
+
+.tile-1 .check-box-2{
+    height:34px;
+    vertical-align: -10px;
+    opacity: 1;
+}
+
+.tile-1 .check-box-text-2{
+    
+}
+
+/*----------------------- after hover --------------------*/
+.tile-1 .description{
+    font-size:11pt;
+    line-height: 18pt;
+    text-align:center;  
+    width:38%;
+    position:absolute;
+    top:55%;
+    z-index: 1;
+}
+
+/*----- order-btn -----*/
+article.tile:hover .order-btn-1{
+    font-size: 10px;
+    font-weight: bold;
+    padding:1.6em 5.1em;
+    top:70%;
+    opacity:1;
+}
+
+
+
+
+/*-------------------------- Tile-2 ------------------------*/
+.tile-2{
+    
+/*    height:32.5vh;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.tile-2 .image-container{
+/*    height:17.5rem;*/
+    height:16.25rem;
+/*    width: 37.9rem;*/
+    width: 35.5rem;
+    border: 1px solid #000;
+/*    border: 1px solid green;*/
+    overflow: hidden;
+}
+
+.tile-2 .bg{
+    max-width: 102%;
+}
+
+/*-------------- Title -----------*/
+.tile-2 .title{
+    font-family: 'Roboto', sans-serif; 
+    font-size:2.53rem;
+    font-weight: 600;
+    position:absolute;
+    left: 44.45%;
+    top:32%;
+    z-index: 1;
+    opacity: 1;
+    text-shadow: 0px 0px 80px rgba(0,0,0,0.2);
+}
+
+article.tile:hover .title-2{
+    top:30%;
+    left:50%;
+    font-size:2rem;
+    opacity: 0.9;
+}
+
+.tile-2 .sub-title{
+    font-size: 12pt;
+    font-weight: bold;
+    opacity: 0.3;
+    top:54%;
+    left:30.5%;
+}
+
+/*------- after hover----- */
+.tile-2 .description{
+    font-size: 0.9rem;
+    line-height: normal;
+    text-align:center;  
+    width: 400px;;
+    position:absolute;
+    top:48%;
+    z-index: 1;
+}
+
+
+/*----- order-btn -----*/
+article.tile:hover .order-btn-2{
+    font-size: 6px;
+    font-weight: bold;
+    border: 0.8px rgba(255,255,255,0.8) solid;
+    padding:2.3em 8em;
+/*    padding:2.5em 8em;*/
+    top:71%;
+    opacity:1;
+}
+
+
+/*---- figure ----*/
+.tile-2 .banner{
+    position: absolute;
+    top:46%;
+    left:16%;
+    height: 38px;
+    opacity: 0.9;
+}
+
+.tile-2 .figure-text{
+    color: #fff;
+    font-weight: 600;
+    width: 150px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+}
+
+.tile-2 .figure-text .line-1{ 
+    font-size: 2.1rem;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 600;
+    text-shadow: 0px 0px 24px rgba(0,0,0,0.2);
+    position: absolute;
+}
+
+.tile-2 .figure-text .line-2{ 
+    font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif; 
+    text-shadow: 0px 0px 24px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 41px;
+}
+
+.tile-2 .figure-text .line-3{ 
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif; 
+    text-shadow: 0px 0px 21px rgba(0,0,0,0.7);
+    position: absolute;
+    top: 69.5px;
+}
+
+.tile-2 .fas{
+    color: #fff; 
+    position: absolute;
+    left: 80%;
+}
+
+.tile-2 .fa-umbrella-beach{
+    font-size: 1.85rem;
+    text-shadow: 0px 0px 21px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 28%;
+    border-bottom: 1.65px dotted #fff;
+    padding-bottom: 8px;
+}
+
+.tile-2 .fa-ship{
+    font-size: 2rem;
+    text-shadow: 0px 0px 21px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 45.8%;
+    border-bottom: 1.65px dotted #fff;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+
+.tile-2 .fa-swimmer{
+    font-size: 2rem;
+    text-shadow: 0px 0px 21px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 67%;
+}
+
+/*------ checkbox -------*/
+.tile-2 .check-box-gup{
+    position: absolute;
+    top:62%;
+    left:15%;
+    width: 250px;
+}
+
+.tile-2 .check-box-gup-line-1{
+    text-align: left;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    width:100%;
+    text-shadow: 0px 0px 18px rgba(0,0,0,0.7);
+}
+
+.tile-2 .check-box-1{
+/*    position: absolute;*/
+    height:26px;
+    vertical-align: -7px;
+    opacity: 0.9;
+}
+
+.tile-2 .check-box-gup-line-2{
+    width:100%;
+    line-height: 0px;
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top:22px;
+    text-align: left;
+    font-size: 9px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+}
+
+.tile-2 .check-box-2{
+    height:26px;
+    vertical-align: -7px;
+    opacity: 0.9;
+}
+
+
+/*-------------------------- Tile-3 ------------------------*/
+.tile-3 .image-container{
+/*    height:35vh;*/
+/*    height:17.5rem;*/
+    height:16.25rem;
+/*    width: 38rem;*/
+    width: 35.5rem;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.tile-3 .bg{
+    max-width: 120%;
+    position: absolute;
+    left: -90px;
+    top: -55px;
+    filter: brightness(0.9);
+}
+
+/*-------------- Title -----------*/
+.tile-3 .title{
+    font-size:2.5rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; 
+    position:absolute;
+    left: 45.5%;
+    top:32%;
+    z-index: 1;
+    opacity: 1;
+    text-shadow: 0px 0px 60px rgba(0,0,0,0.8);
+}
+
+article.tile:hover .title-3{
+    top:30%;
+    left:50%;
+    font-size:2rem;
+    opacity: 0.9;
+}
+
+.tile-3 .sub-title{
+    font-size: 12pt;
+    font-weight: bolder;
+    opacity: 0.45;
+    top:54%;
+    left:30.5%;
+}
+
+/*------- after hover----- */
+.tile-3 .description{
+    font-size: 0.9rem;
+    line-height: normal;
+    text-align:center;  
+    width: 400px;;
+    position:absolute;
+    top:48%;
+    z-index: 1;
+}
+
+
+/*----- order-btn -----*/
+article.tile:hover .order-btn-3{
+    font-size: 6px;
+    font-weight: bold;
+    border: 0.8px rgba(255,255,255,0.8) solid;
+    padding:2.3em 8em;
+/*    padding:2.5em 8em;*/
+    top:71%;
+    opacity:1;
+}
+
+
+/*---- figure ----*/
+.tile-3 .banner{
+    position: absolute;
+    top:46%;
+    left:16.2%;
+    height: 38px;
+    opacity: 0.9;
+}
+
+.tile-3 .figure-text{
+    color: #fff;
+    font-weight: 600;
+    width: 150px;
+    text-align: left;
+    position: absolute;
+    top: 49.5%;
+    left: 66%;
+}
+
+.tile-3 .figure-text .line-1{ 
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+}
+
+.tile-3 .figure-text .line-2{ 
+    font-size: 2.25rem;
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top: 42px;
+}
+
+.tile-3 .figure-text .line-3{ 
+    font-size: 0.94rem;
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top: 71px;
+}
+
+.tile-3 .fas{
+    color: #fff; 
+    position: absolute;
+    left: 82%;
+}
+
+.tile-3 .fa-tree{
+    font-size: 2rem;
+    position: absolute;
+    top: 26%;
+    border-bottom: 1.65px dotted #fff;
+    padding-bottom: 10px;
+    text-shadow: 0px -60px 90px rgba(0,0,0,0.8);
+}
+
+.tile-3 .fa-hiking{
+    font-size: 2rem;
+    position: absolute;
+    top: 45.5%;
+    border-bottom: 1.65px dotted #fff;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    text-shadow: 0px 0px 90px rgba(0,0,0,0.5);
+}
+
+.tile-3 .fa-bicycle{
+    font-size: 2rem;
+    opacity: 0.9;
+    position: absolute;
+    left: 81%;
+    top: 67.8%;
+}
+
+/*------ checkbox -------*/
+.tile-3 .check-box-gup{
+    position: absolute;
+    top:63.2%;
+    left:15.2%;
+    width: 250px;
+}
+
+.tile-3 .check-box-gup-line-1{
+    text-align: left;
+    font-size: 0.1rem;
+    font-weight: 450;
+    font-family: 'Roboto', sans-serif; 
+    width:100%;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.8);
+}
+
+.tile-3 .check-box-1{
+/*    position: absolute;*/
+    height:26px;
+    vertical-align: -7px;
+    opacity: 0.9;
+}
+
+.tile-3 .check-box-gup-line-2{
+    width:100%;
+    line-height: 0px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top:22px;
+    text-align: left;
+    font-size: 0.5rem;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.8);
+}
+
+.tile-3 .check-box-2{
+    height:26px;
+    vertical-align: -7px;
+    opacity: 0.9;
+}
+
+
+/*----------------------- Tile-4 ---------------------*/
+/*
+.tile-4 .image-container{
+    overflow: hidden;
+
+    height:70vh;
+    
+}
+
+.tile-4 .bg{
+    flex-shrink:0;
+    -webkit-flex-shrink: 0;
+    max-width:120%;
+    position: absolute;
+    left: 50%;
+    
+}
+*/
+
+
+.tile-4 {
+/*    height:65vh;*/
+/*    height: 35.2rem;*/
+    height: 32.5rem;
+    width:33.2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    position:relative;
+    border: 1px solid #000;
+}
+
+.tile-4 img{
+    flex-shrink:0;
+    -webkit-flex-shrink: 0;
+    max-width:255%;
+    position: absolute;
+    top:-28%;
+    left:-75%;
+    overflow:hidden;
+}
+
+.tile-4 .logo{
+    height: 4rem;
+    position: absolute;
+    top: 18.5%;
+    left: 37%;
+    opacity:0.7;
+}
+
+.tile-4 .sub-title{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255,255,255,1.00);
+    font-size: 1.75rem;
+    font-weight: bolder;
+    text-shadow: 0px 0px 12px rgba(0,0,0,0.6);
+    opacity: 0.85;
+    position: absolute;
+    top: 30%;
+    left: 34.5%;
+}
+
+.tile-4 .title{
+    color: rgba(255,255,255,1.00);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 7.55rem;
+    text-shadow: 0px 0px 16px rgba(0,0,0,0.3),0px 0px 36px rgba(0,0,0,0.5);
+    opacity: 1;
+    position: absolute;
+    top:39%;
+    left: 25%;   
+}
+
+.tile-4 .description-4{
+    color: #fff;
+    font-size: 0.1rem;
+    line-height: normal;
+    width: 68%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.8),0px 0px 14px rgba(0,0,0,0.6);
+    opacity: 1;
+    position: absolute;
+    top: 66.25%;
+    left: 15.5%;
+}
+
+.tile-4 .order-btn-4{
+    font-size: 6px;
+    font-weight: bold;
+    border: 0.8px rgba(255,255,255,0.8) solid;
+    text-shadow: 0px 0px 12px rgba(0,0,0,0.9),0px 0px 60px rgba(0,0,0,1);
+    padding:2.3em 8em;
+/*    padding:2.5em 8em;*/
+    position: absolute;
+    top:76%;
+    left: 33%;
+    opacity:1;
+}
+
+.tile-4 .order-btn-4:hover{
+    text-shadow:none;
+}
+
+/*----------------------- tile-5 ---------------------*/
+.tile-5{
+       position:relative;
+/*    height:140vh;*/
+/*    height:69rem;*/
+    height:66.5rem;
+    width:24.6rem;
+    border:1px #000 solid;
+}
+
+.tile-5 .image-container-5{
+/*    height:140.5vh;*/
+    height:69rem;
+    width:24.6rem;
+/*    display:flex;*/
+/*    justify-content:center;*/
+/*    align-items:center;*/
+    overflow:hidden;
+    position:relative;
+    z-index:0;
+    filter: brightness(0.4);
+}
+
+.tile-5 .bg-5{
+    flex-shrink:0;
+    -webkit-flex-shrink: 0;
+    max-width:188.2%;
+    position: absolute;
+/*    filter: grayscale(0.7);*/
+/*
+     -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+*/
+}
+
+.tile-5 .content .about-us{
+    color:#fff;
+    font-size: 1.5rem;
+    line-height:2.4rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    opacity: 0.75;
+    width: 60%;
+/*    padding:3.5em;*/
+/*    margin-top: 15em;*/
+    position: absolute;
+    top:27.5%;
+    left: 15%;
+    z-index: 1;
+}
+
+
+
+/*----------------------- tile-6 ---------------------*/
+.tile-6{
+    position:relative;
+/*    height: 60vh;*/
+    height: 34rem;
+    overflow:hidden;
+    border: 1px solid #000;
+}
+
+.tile-6 .image-container-6{
+    height:34rem;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.tile-6 img{
+    flex-shrink:0;
+    -webkit-flex-shrink: 0;
+    max-width:272%;
+    filter: brightness(0.4);
+}
+
+.tile-6 .paragraph{
+    color: #fff;
+    opacity: 0.75;
+    font-size: 2.1rem;
+    font-family: 'Roboto', sans-serif; 
+    line-height: 3.1rem;
+    width:58%;
+    text-align: center;
+    position:absolute;
+    top:20%;
+    left: 23%;
+   
+}
+
+/*----------------------- tile-7 ---------------------*/
+.tile-7{
+    position: relative;
+    border: 1px solid #000;
+    height: 34rem;
+    overflow: hidden;
+}
+
+.tile-7 .image-container{
+    
+}
+
+.tile-7 .t7-bg{
+    position: relative;
+    left:-30px;
+    top:-80px;
+    transform: scale(1.1);
+}
+
+.is-vertical .tile-7 .logo{
+    position:absolute;
+    width:30%;
+    left: 33.4%;
+    top: 40%;
+    opacity:0.5;
+}
+
+.tile-7 .ski-l{
+    position:absolute;
+    width:150px;
+    left: 17%;
+    top: 43%;
+    opacity:0.15;
+}
+
+.tile-7 .ski-r{
+    position:absolute;
+    width:150px;
+    left: 67.8%;
+    top: 43%;
+    opacity:0.15;
+}
+
+.tile-7 .title-1{
+    color: #fff;
+    font-size: 18pt;
+    font-family: Roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top:53%;
+    left:18.5%;
+    opacity: 0.5;
+}
+
+.tile-7 .title-2{
+    color: #fff;
+    font-size: 18pt;
+    font-family: Roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top:53%;
+    left:67.5%;
+    opacity: 0.5;
+}
+
+
+
+
+/*----------------------- tile-8 ---------------------*/
+.tile-8 .image-container{
+    height:34rem;
+    top:0;
+    border: 1px solid #000;
+    position: relative;
+}
+
+/*-------------- Title -----------*/
+.tile-8 .title-8{
+/*    font-size:4.8rem;*/
+    font-size:76px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; 
+    position:absolute;
+    left: 44.4%;
+    top:40%;
+    z-index: 1;
+    opacity: 1;
+    text-shadow: 0px 0px 60px rgba(0,0,0,0.8);
+}
+
+article.tile:hover .title-8{
+    top:37%;
+    left:50%;
+    font-size:36pt;
+    opacity: 0.9;
+}
+
+.tile-8 .sub-title{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    opacity: 0.45;
+    top:58.7%;
+    left:36%;
+}
+
+/*------- after hover----- */
+.tile-8 .description-8{
+    color: #fff;
+    font-size:11pt;
+    line-height: normal;
+    text-align:center;  
+    width: 500px;
+    position:absolute;
+    top:51.5%;
+    z-index: 1;
+}
+
+.tile-8 .ski-after{
+    top: 50%;
+}
+
+/*----- order-btn -----*/
+article.tile-8:hover .order-btn-8,
+article.tile-8.hover .order-btn-8{
+    font-size: 6px;
+    font-weight: bold;
+    border: 0.8px rgba(255,255,255,0.8) solid;
+    padding:2.3em 8em;
+/*    padding:2.5em 8em;*/
+    position:absolute;
+    top: 67%;
+    opacity:1;
+}
+
+
+/*---- figure ----*/
+.tile-8 .banner{
+    position: absolute;
+    top:53.6%;
+    left:24%;
+    height: 3.5rem;
+    opacity: 0.9;
+}
+
+.tile-8 .figure-text{
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; 
+    width: 150px;
+    text-align: left;
+    position: absolute;
+    top: 56.3%;
+    left: 59.6%;
+}
+
+.tile-8 .figure-text .line-1{ 
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 24px rgba(0,0,0,0.8);
+    position: absolute;
+}
+
+.tile-8 .figure-text .line-2{ 
+    font-size: 2.8rem;
+    text-shadow: 0px 0px 26px rgba(0,0,0,0.85);
+    position: absolute;
+    top: 58px;
+}
+
+.tile-8 .figure-text .line-3{ 
+    font-size: 1.07rem;
+    text-shadow: 0px 0px 18px rgba(0,0,0,0.6);
+    position: absolute;
+    top: 94px;
+}
+
+.tile-8 .fas{
+    color: #fff; 
+    position: absolute;
+    left: 73%;
+}
+
+.tile-8 .fa-helicopter{
+    font-size: 3rem;
+    border-bottom: 1.65px dotted #fff;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 18px rgba(0,0,0,0.6);
+    position: absolute;
+    top: 34%;
+}
+
+.tile-8 .fa-hiking{
+    font-size: 3.3rem;
+    position: absolute;
+    top: 48.2%;
+    left:73%;
+    border-bottom: 1.65px dotted #fff;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 12px;
+    text-shadow: 0px 0px 26px rgba(0,0,0,0.4);
+}
+
+.tile-8 .fa-mountain{
+    font-size: 3rem;
+    text-shadow: 0px 0px 24px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 65.2%;
+}
+
+/*------ checkbox -------*/
+.tile-8 .check-box-gup{
+    position: absolute;
+    top:65.5%;
+    left:23.5%;
+}
+
+.tile-8 .check-box-gup-line-1{
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif; 
+    margin-bottom: 7px;
+    width:100%;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.8);
+}
+
+.tile-8 .check-box-1{
+/*    position: absolute;*/
+    height:30px;
+    vertical-align: -8px;
+    opacity: 1;
+}
+
+.tile-8 .check-box-gup-line-2{
+    width:120%;
+    line-height: 48px;
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top:20px;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.8);
+}
+
+.tile-8 .check-box-2{
+    height:30px;
+    vertical-align: -8px;
+    opacity: 1;
+}
+
+/*----------------------- tile-9 ---------------------*/
+.tile-9{
+/*    height:32.6vh;*/
+/*    height: 17.5rem;*/
+    height: 16.75rem;
+    position:relative;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.tile-9 .image-container{
+    height:17.5rem;
+    overflow: hidden;
+}
+
+.tile-9 .bg{
+    position: absolute;
+    left: 0px;
+    top: -140px;
+    max-width: 118%;
+    filter: brightness(1.15);
+}
+
+.tile-9 .title{
+    color:#fff;
+    opacity: 0.92;
+    font-size:2.5rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; 
+    text-shadow: 0px 0px 60px rgba(0,0,0,0.4);
+    position:absolute;
+    left: 42%;
+    top:22%;
+}
+
+.tile-9 .description{
+    color: #fff; 
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+    font-size: 14px;
+    line-height: 22px;
+    text-align:center;  
+    font-family: 'Roboto', sans-serif; 
+    width: 370px;
+    position:absolute;
+    top:42%;
+    left: 18.5%;
+    z-index: 1;
+}
+
+ .order-btn-9{
+    font-size: 6px;
+    font-weight: bold;
+    border: 0.8px rgba(255,255,255,0.8) solid;
+    text-shadow: 0px 0px 60px rgba(0,0,0,0.1);
+    padding:2.3em 7em;
+/*    padding:2.5em 8em;*/
+    position: absolute;
+    top:64%;
+    left: 35.5%;
+    opacity:1;
+}
+
+.tile-9 .fa-bookmark{
+    color: #fff; 
+    opacity: 0.95;
+    font-size: 2rem;
+    text-shadow: 0px 0px 30px rgba(0,0,0,0.7);
+    position: absolute;
+    top: 25%;
+    left: 32.5%;
+}
+
+
+/*----------------------- tile-10 ---------------------*/
+.tile-10{
+/*    height:32.6vh;*/
+/*    height: 17.5rem;*/
+    height: 16.75rem;
+    position:relative;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.tile-10 .image-container{
+    height:17.5rem;
+    overflow: hidden;
+}
+
+.tile-10 .bg{
+    max-width: 131%;
+    filter: brightness(0.95);
+}
+
+.tile-10 .title{
+    color:#fff;
+    opacity: 0.95;
+    font-size:2.5rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; 
+    text-shadow: 0px 0px 60px rgba(0,0,0,0.4);
+    position:absolute;
+    left: 34.5%;
+    top:22%;
+}
+
+.tile-10 .description{
+    color: #fff; 
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif; 
+    text-align:center;  
+    width: 390px;;
+    position:absolute;
+    top:42%;
+    left: 15.5%;
+    z-index: 1;
+}
+
+ .order-btn-10{
+    font-size: 6px;
+    font-weight: bold;
+    opacity:1;
+    border: 0.8px rgba(255,255,255,0.8) solid;
+    padding:2.3em 8em;
+/*    padding:2.5em 8em;*/
+    text-shadow: 0px 0px 60px rgba(0,0,0,0.9);
+    position: absolute;
+    top:64%;
+    left: 35%;
+}
+
+.tile-10 .fa-user{
+    color: #fff; 
+    font-size: 2.3rem;
+    text-shadow: 0px 0px 21px rgba(0,0,0,0.4);
+    position: absolute;
+    top: 22%;
+    left: 25%;
+}
+/*----------------------- tile-11 ---------------------*/
+.tile-11{
+/*    height: 51.5rem;*/
+    height: 50.75rem;
+    boeder: 1px solid #000;
+    overflow: hidden;
+}
+
+.tile-11 .bg-11{
+/*    position: absolute;*/
+    max-width: 564%;
+    filter: brightness(0.5);
+    position: absolute;
+    left: -50px;
+    top: -80px;
+}
+
+article.tile-11:hover .bg-11,
+article.tile-11.hover .bg-11{
+    filter: brightness(1);
+}
+
+.tile-11 .title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Roboto', sans-serif; 
+    text-align: left;
+    opacity: 0.6;
+    position: absolute;
+    top: 55%;
+    left: 86%;
+}
+
+article.tile-11:hover .title,
+article.tile-11.hover .title{
+    opacity: 0;
+    transition: 1.2s;
+}
+
+
+.tile-11 .subtitle{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    font-family: 'Roboto', sans-serif; 
+    position: absolute;
+    top: 58%;
+    left: 48%;
+    transition: 1.2s;
+}
+
+
+/*======================= footer ======================*/
+.footer{
+/*    height: 10px;*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    border: red solid 1px;*/
+}
+
+.footer-with-bg{
+    color:rgba(255,255,255,0.8);
+    font-size: 0.8em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    padding:0.5em 0 0.6em 0;
+    background-color:rgba(0,0,0,0.85);
+    width: 100%;
+/*    position: absolute;*/
+    margin-top:12px;
+}
+
+
+
+/*=======================================================*/
+/*======================== Tablet =======================*/
+@media screen and (max-width: 768px){
+
+/*========== Tablet Header =======*/
+#header{
+    height: 5.5rem;
+    overflow: hidden;
+}
+
+#header .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0rem;
+}
+
+#header .title{
+    font-size: 24pt;
+    padding: 0.65rem;
+    padding-left: 1rem;
+    top: 10%;
+    left: 3%;
+}
+
+#header .description{
+    font-size: 9px;
+    width: 35%;
+    top: 35%;
+    left: 39.5%;
+}
+
+/*===================== Tablet Tiles ====================*/
+
+/*----------- Tablet Tile-1 ------------*/
+.tile-1{
+    height:20rem;
+    width: 48.8rem;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.tile-1 .image-container{
+    height: 20rem;
+}
+
+.tile-1 .bg{
+    max-width: 150%;
+    top:-185px;
+    left: -320px;
+}
+    
+/*-------------- Title -----------*/
+.tile-1 .title{
+    font-size:53pt;
+    top:34.5%;
+    left: 45%;
+}
+
+article.tile:hover .title{
+    font-size: 36px;
+}
+
+.tile-1 .sub-title{
+    font-size: 14pt;
+    top:54.5%;
+    left:32%;
+}
+
+article.tile:hover .description-1{
+    top:53%;
+    width: 55%;
+}
+
+/*-------- Figure -------*/
+.tile-1 .banner{
+    top:48%;
+    left:21%;
+    height: 42px;
+}
+
+.snowman-figure-text .line-1{
+    top:50%;
+    font-size:16pt;
+    left: 60%;
+}
+
+.snowman-figure-text .line-2{
+    top:63%;
+    left:60%;
+    font-size:36pt;
+}
+
+.snowman-figure-text .line-3{
+    top:76%;
+    left:60%;
+    font-size:17pt;
+}
+
+/*--- These are imgs not icons-----*/
+.tile-1 .snowman{
+    height:60px;
+    top:24.5%;
+    left:75%;
+    padding:8px;
+}
+
+.tile-1 .ski-equip{
+    height:65px;
+    top:43.9%;
+    left:75.3%;
+    padding:8px;
+    padding-bottom:10px;
+}
+
+.tile-1 .skateboard{
+    height:64px;
+    top:63.9%;
+    left:74.5%;
+    padding:12px;
+}
+
+/*-- ski --*/
+.tile-1 .ski{
+    height:240px;
+    top:35%;
+    left:54%;
+}
+
+.ski-after{
+    top:50%;
+    height:250px;
+}
+
+/*----- check-box -------*/
+.tile-1 .check-box-gup{
+    top:64%;
+    left:20.4%;
+}
+
+.tile-1 .check-box-gup-line-1{
+    font-size: 14px;
+    font-weight: 500;
+    width:100%;
+}
+
+.tile-1 .check-box-1{
+    height:30px;
+}
+
+.tile-1 .check-box-gup-line-2{
+    font-size: 14px;
+    width:100%;
+    top:17px;
+}
+
+.tile-1 .check-box-2{
+    height:30px;
+    vertical-align: -10px;
+}
+
+
+/*------------- after hover ----------*/
+.tile-1 .description{
+    font-size:9pt;
+    line-height: normal;
+    width:10px;
+    top:55%;
+}
+
+/*----- order-btn -----*/
+article.tile:hover .order-btn-1{
+    font-size: 10px;
+    padding:1.2em 4em;
+    top:72.5%;
+}
+
+
+/*--------------- Tablet Tile-2 ---------------*/
+.tile-2 .image-container{
+    height:20rem;
+    width: 98.5%;
+}
+
+.tile-2 .bg{
+    position: absolute;
+    max-width: 98.5%;
+    top: -120px;
+    left: 0;
+}
+
+/*-------------- Title -----------*/
+.tile-2 .title{
+    font-size:2.8rem;
+    font-weight: 600;
+    left: 44.5%;
+    top:32%;
+    text-shadow: 0px 0px 40px rgba(0,0,0,0.3);
+}
+
+article.tile:hover .title-2{
+    top:34%;
+    left:50%;
+    font-size:36px;
+}
+
+.tile-2 .sub-title{
+    font-size: 14pt;
+    opacity: 0.35;
+    top:51.2%;
+    left:32.5%;
+}
+
+/*------- after hover----- */
+.tile-2 .description{
+    font-size: 14px; 
+    width: 400px;
+    top:51%;
+    z-index: 1;
+}
+    
+
+/*----- order-btn -----*/
+article.tile:hover .order-btn-2{
+    font-size: 10px;
+    padding:1.2em 4em;
+    top:70%;
+}
+
+
+/*---- figure ----*/
+.tile-2 .banner{
+    top:45%;
+    left:21.6%;
+    height: 38px;
+}
+
+.tile-2 .figure-text{
+    width: 150px;
+    top: 48.4%;
+    left: 59.7%;
+}
+
+.tile-2 .figure-text .line-1{ 
+    font-size: 2.6rem;
+}
+
+.tile-2 .figure-text .line-2{ 
+    font-size: 2.6rem;
+    top: 50px;
+}
+
+.tile-2 .figure-text .line-3{ 
+    font-size: 1.05rem;
+    top: 82px;
+}
+
+.tile-2 .fas{
+    left: 74.7%;
+    opacity: 0.95;
+}
+
+.tile-2 .fa-umbrella-beach{
+    font-size: 2rem;
+    top: 30%;
+    border-bottom: 1.65px dotted #fff;
+    padding-bottom: 10px;
+}
+
+.tile-2 .fa-ship{
+    font-size: 2rem;
+    top: 48%;
+    border-bottom: 1.65px dotted #fff;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+
+.tile-2 .fa-swimmer{
+    font-size: 2rem;
+    top: 68%;
+}
+
+/*------ checkbox -------*/
+.tile-2 .check-box-gup{
+    top:61%;
+    left:21%;
+    width: 250px;
+}
+
+.tile-2 .check-box-gup-line-1{
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.tile-2 .check-box-1{
+    height:30px;
+    
+}
+
+.tile-2 .check-box-gup-line-2{
+    top:24px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.tile-2 .check-box-2{
+    height:30px;
+}
+
+
+/*---------Tablet  Tile-3 ------------*/
+.tile-3 .image-container{
+    height:20rem;
+    width: 98.6%;
+}
+
+.tile-3 .bg{
+    max-width: 100%;
+    left: 0px;
+    top: -110px;
+}
+
+/*-------------- Title -----------*/
+.tile-3 .title{
+    font-size:2.65rem;
+    left: 46%;
+    top:34.5%;
+}
+
+article.tile:hover .title-3{
+    top:38%;
+    left:50%;
+    font-size:36px;
+}
+
+.tile-3 .sub-title{
+    font-size: 14pt;
+    font-weight: bolder;
+    opacity: 0.5;
+    top:54%;
+    left:34%;
+}
+
+/*------- after hover----- */
+.tile-3 .description{
+    font-size: 14px; 
+    width: 400px;
+    top:54.5%;
+}
+
+/*----- order-btn -----*/
+article.tile:hover .order-btn-3{
+    font-size: 10px;
+    padding:1.2em 4em;
+    top:72.5%;
+
+}
+
+/*---- figure ----*/
+.tile-3 .banner{
+    top:48%;
+    left:22.7%;
+    height: 38px;
+}
+
+.tile-3 .figure-text{
+    width: 150px;
+    top: 51%;
+    left: 62%;
+}
+
+.tile-3 .figure-text .line-1{ 
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.tile-3 .figure-text .line-2{ 
+    font-size: 2.4rem;
+    top: 48px;
+}
+
+.tile-3 .figure-text .line-3{ 
+    font-size: 1rem;
+    top: 80px;
+}
+
+.tile-3 .fas{
+    left: 77.5%;
+}
+
+.tile-3 .fa-tree{
+    font-size: 2.15rem;
+    top: 28.5%;
+    border-bottom: 1.65px dotted #fff;
+    padding-bottom: 10px;
+}
+
+.tile-3 .fa-hiking{
+    font-size: 2.25rem;
+    top: 47.5%;
+    border-bottom: 1.65px dotted #fff;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+
+.tile-3 .fa-bicycle{
+    font-size: 2.05rem;
+    left: 77%;
+    top: 69.8%;
+}
+
+/*------ checkbox -------*/
+.tile-3 .check-box-gup{
+    top:62.5%;
+    left:22%;
+    width: 250px;
+}
+
+.tile-3 .check-box-gup-line-1{
+    font-size: 14px;
+}
+
+.tile-3 .check-box-1{
+    height:30px;
+    vertical-align: -7px;
+    opacity: 0.9;
+}
+
+.tile-3 .check-box-gup-line-2{
+    width:100%;
+    top:26px;
+    font-size: 14px;
+}
+
+.tile-3 .check-box-2{
+    height:30px;
+}
+
+
+/*------------- Tablet Tile-4 -----------*/
+.tile-4 {
+    height: 44rem;
+    width:98.5%;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    position:relative;
+    border: 1px solid #000;
+}
+
+.tile-4 img{
+    max-width:255%;
+    top:-28%;
+    left:-78%;
+}
+
+.tile-4 .logo{
+    height: 5rem;
+    top: 19.5%;
+    left: 39.2%;
+}
+
+.tile-4 .sub-title{
+    font-size: 2.1rem;
+    top: 30%;
+    left: 37.5%;
+}
+
+.tile-4 .title{
+    font-size: 9rem;
+    top:40%;
+    left: 30%;   
+}
+
+.tile-4 .description-4{
+    font-size: 16px;
+    width: 64%;
+    top: 65%;
+    left: 19%;
+}
+
+.tile-4 .order-btn-4{
+    font-size: 16px;
+    padding:1em 3em;
+    top:76%;
+    left: 36%;
+}
+
+
+
+/*----------------------- tile-5 ---------------------*/
+.tile-5{
+    height:20rem;
+    width:98.5%;
+}
+
+.tile-5 .image-container-5{
+    height:20rem;
+    width:100%;
+}
+
+.tile-5 .bg-5{
+    max-width:100%;
+    top: 0%;
+}
+
+.tile-5 .content .about-us{
+    font-size: 24px;
+    opacity: 0.7;
+    width: 70%;
+    top:20%;
+    left: 15%;
+}
+
+
+
+/*----------------------- tile-6 ---------------------*/
+.tile-6{
+    height: 20rem;
+}
+    
+.tile-6 .image-container-6{
+    height:20rem;
+    width: 98.5%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.tile-6 img{
+    max-width:253%;
+}
+
+.tile-6 .paragraph{
+    font-size: 2.5rem;
+    width:70%;
+    text-align: center;
+    top:28%;
+    left: 14%;
+   
+}
+
+/*-------------- Tablet tile-7 -------------*/
+.tile-7{
+    border: 1px solid #000;
+    height: 30rem;
+    width: 98.5%;
+}
+
+.tile-7 .image-container{
+    
+}
+
+.tile-7 .t7-bg{
+    left:6px;
+    top:0px;
+    transform: scale(1.1);
+}
+
+.is-vertical .tile-7 .logo{
+    width:34%;
+    left: 34%;
+    top: 47%;
+}
+
+.tile-7 .ski-l{
+    width:150px;
+    left: 10.5%;
+    top: 46%;
+    opacity:0.15;
+}
+
+.tile-7 .ski-r{
+    width:150px;
+    left: 72%;
+    top: 46%;
+    opacity:0.15;
+}
+
+.tile-7 .title-1{
+    font-size: 18pt;
+    top:56%;
+    left:13%;
+    opacity: 0.5;
+}
+
+.tile-7 .title-2{
+    font-size: 18pt;
+    top:58%;
+    left:72%;
+    opacity: 0.58;
+}
+
+
+
+/*----------- Tablet tile-8 ------------*/  
+  
+.tile-8 .image-container{
+    height:20rem;
+    width: 98.5%;
+    border: 1px solid #000;
+}
+
+/*-------------- Title -----------*/
+.tile-8 .title-8{
+    font-size:46pt;
+    left: 45%;
+    top:39%;
+}
+
+article.tile:hover .title-8{
+    top:36%;
+    left:50%;
+    font-size:36pt;
+}
+
+.tile-8 .sub-title{
+    font-size: 14pt;
+    top:60%;
+    left:35%;
+}
+
+/*------- after hover----- */
+.tile-8 .description-8{
+    font-size:11pt;
+    width: 480px;
+    top:56%;
+}
+
+.tile-8 .ski-after{
+    top: 50%;
+}
+
+/*----- order-btn -----*/
+article.tile-8:hover .order-btn-8,
+article.tile-8.hover .order-btn-8{
+    font-size: 6px;
+    padding:2.3em 8em;
+    top: 77%;
+}
+
+/*---- figure ----*/
+.tile-8 .banner{
+    top:53.6%;
+    left:22%;
+    height: 44px;
+}
+
+.tile-8 .figure-text{
+    width: 150px;
+    top: 57.5%;
+    left: 62.3%;
+}
+
+.tile-8 .figure-text .line-1{ 
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.tile-8 .figure-text .line-2{ 
+    font-size: 2.25rem;
+    top: 46px;
+}
+
+.tile-8 .figure-text .line-3{ 
+    font-size: 0.85rem;
+    top: 80px;
+}
+
+.tile-8 .fas{
+    left: 73%;
+}
+
+.tile-8 .fa-helicopter{
+    font-size: 2rem;
+    border-bottom: 1.65px dotted #fff;
+    padding-bottom: 10px;
+    top: 32.5%;
+}
+
+.tile-8 .fa-hiking{
+    font-size: 2.34rem;
+    top: 49.5%;
+    left:73%;
+    border-bottom: 1.65px dotted #fff;
+    padding-bottom: 9px;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+
+.tile-8 .fa-mountain{
+    font-size: 2rem;
+    top: 73%;
+    opacity: 0.95;
+}
+
+/*------ checkbox -------*/
+.tile-8 .check-box-gup{
+    top:69%;
+    left:21.5%;
+}
+
+.tile-8 .check-box-gup-line-1{
+    font-size: 13px;
+}
+
+.tile-8 .check-box-1{
+    height:28px;
+}
+
+.tile-8 .check-box-gup-line-2{
+    font-size: 13px;
+    line-height: 48px;
+    top:16px;
+}
+
+.tile-8 .check-box-2{
+    height:28px;
+}
+
+/*---------- Tablet tile-9 ------------*/
+.tile-9{
+    height: 20rem;
+    width: 98.5%;
+    border: 1px solid #000;
+}
+
+.tile-9 .image-container{
+    height: 20rem;
+}
+
+.tile-9 .bg{
+    left: 0px;
+    top: -145px;
+    max-width: 110%;
+}
+
+.tile-9 .title{
+    font-size:2.5rem;
+    left: 42.7%;
+    top:25%;
+}
+
+.tile-9 .description{
+    font-size: 0.9rem;
+    width: 370px;
+    top:45%;
+    left: 27%;
+}
+
+ .order-btn-9{
+    font-size: 6px;
+    padding:2.3em 7em;
+    top:67%;
+    left: 39.5%;
+}
+
+.tile-9 .fa-bookmark{
+    font-size: 2rem;
+    top: 27.5%;
+    left: 36%;
+}
+
+
+/*-------------- Tablet tile-10 -------------*/
+.tile-10{
+    height: 20rem;
+    width: 98.5%;
+    border: 1px solid #000;
+}
+
+.tile-10 .image-container{
+    height:20rem;
+}
+
+.tile-10 .bg{
+    max-width: 131%;
+}
+
+.tile-10 .title{
+    font-size:2.5rem;
+    left: 39%;
+    top:25%;
+}
+
+.tile-10 .description{
+    font-size: 0.9rem;
+    width: 380px;;
+    top:45%;
+    left: 25.5%;
+}
+
+ .order-btn-10{
+    font-size: 6px;
+    padding:2.3em 8em;
+    top:67%;
+    left: 38.5%;
+}
+
+.tile-10 .fa-user{ 
+    font-size: 2.4rem;
+    top: 25%;
+    left: 32%;
+}
+/*----- Tablet tile-11 ----------*/
+.tile-11{
+    height: 20rem;
+    width: 98.5%;
+    boeder: 1px solid #000;
+}
+
+.tile-11 .bg-11{
+    max-width: 117%;
+    left: -80px;
+    top: -80px;
+}
+    
+.tile-11 .title{
+    font-size: 1.6rem;
+    top: 50%;
+    left: 93%;
+}
+    
+.tile-11 .subtitle{
+    font-size: 1.6rem;
+    width: 55%;
+    line-height: 2.6rem;
+    top: 56%;
+    left: 49%;
+}
+}
+
+
+
+/*---------------- Phone ---------------*/
+@media screen and (max-width: 600px){
+/*========== Phone Header =======*/
+#header{
+    height: 3.2rem;
+    overflow: hidden;
+}
+
+#header .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0rem;
+}
+
+#header .title{
+    font-size: 14pt;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    top: 0%;
+    left: 1%;
+}
+
+#header .description{
+    opacity: 0;
+/*
+    font-size: 9px;
+    width: 50%;
+    top: 0%;
+    left: 39.5%;
+*/
+}
+
+/*===================== Phone Tiles ====================*/
+/*----------- Phone Tile-1 ------------*/
+.tile-1{
+    height:11.5rem;
+    width: 24.2rem;
+    border: 1px solid #000;
+}
+
+.tile-1 .image-container{
+    height: 11rem;
+    width: 24.2rem;
+}
+
+.tile-1 .bg{
+    max-width: 100%;
+    top: -40px;
+    left: 0px;
+}
+    
+/*-------------- Title -----------*/
+.tile-1 .title{
+    font-size:35pt;
+    top:32%;
+    left: 44%;
+}
+
+article.tile:hover .title{
+    font-size: 28px;
+    top: 19%;
+}
+
+.tile-1 .sub-title{
+    font-size: 10pt;
+    top:55.5%;
+    left:25%;
+}
+
+article.tile:hover .description-1{
+    font-size: 9px;
+    top:48%;
+    width: 88%;
+}
+
+/*-------- Figure -------*/
+.tile-1 .banner{
+    top:48%;
+    left:11.5%;
+    height: 26px;
+}
+
+.snowman-figure-text .line-1{
+    top:51%;
+    font-size:9pt;
+    left: 66%;
+}
+
+.snowman-figure-text .line-2{
+    top:66%;
+    left:65.5%;
+    font-size:21pt;
+}
+
+.snowman-figure-text .line-3{
+    top:81.5%;
+    left:66.5%;
+    font-size:10pt;
+}
+
+/*--- These are imgs not icons-----*/
+.tile-1 .snowman{
+    height:36px;
+    top:20%;
+    left:82.5%;
+    padding:4px;
+    border-bottom: 1px dotted #fff;
+}
+
+.tile-1 .ski-equip{
+    height:40px;
+    top:40%;
+    left:82.5%;
+    padding:5px;
+    padding:6px;
+    border-bottom: 1px dotted #fff;
+}
+
+.tile-1 .skateboard{
+    height:24px;
+    top:67%;
+    left:84%;
+    padding:0px;
+}
+
+/*-- ski --*/
+.tile-1 .ski{
+    height:240px;
+    top:35%;
+    left:54%;
+}
+
+.ski-after{
+    top:50%;
+    height:250px;
+}
+
+/*----- check-box -------*/
+.tile-1 .check-box-gup{
+    top:75%;
+    left:10.5%;
+}
+
+.tile-1 .check-box-gup-line-1{
+    font-size: 9px;
+    font-weight: 500;
+    width:100%;
+}
+
+.tile-1 .check-box-1{
+    height:21px;
+    vertical-align: -5px;
+    margin-right: -4px;
+}
+
+.tile-1 .check-box-gup-line-2{
+    font-size: 9px;
+    font-weight: 500;
+    width:100%;
+    top:-29px;
+}
+
+.tile-1 .check-box-2{
+    height:21px;
+    vertical-align: -5px;
+    margin-right: -4px;
+}
+
+
+/*------- after hover -----*/
+.tile-1 .description{
+    font-size:9pt;
+    line-height: normal;
+    width:10px;
+    top:50%;
+}
+
+article.tile:hover .ski-after{
+    opacity: 0;
+}
+    
+    
+/*----- order-btn -----*/
+article.tile:hover .order-btn-1{
+    font-size: 7px;
+    padding:1.2em 3.4em;
+    top:80%;
+    opacity: 0.9
+}
+
+    
+
+/*============ Phone Tile-2 =========*/
+.tile-2 .image-container{
+    height:11.5rem;
+}
+
+.tile-2 .bg{
+    max-width: 98.5%;
+    top: -40px;
+    left: 0;
+}
+
+/*-------------- Title -----------*/
+.tile-2 .title{
+    font-size:1.95rem;
+    font-weight: 600;
+    left: 44%;
+    top:27.5%;
+    text-shadow: 0px 0px 40px rgba(0,0,0,0.3);
+}
+
+article.tile:hover .title-2{
+    top:28%;
+    left:50%;
+    font-size:26px;
+}
+
+.tile-2 .sub-title{
+    font-size: 10pt;
+    top:50.5%;
+    left:29%;
+}
+
+/*------- after hover----- */
+.tile-2 .description{
+    font-size: 11px; 
+    width: 340px;
+    top:49%;
+}
+    
+
+/*----- order-btn -----*/
+article.tile:hover .order-btn-2{
+    font-size: 7px;
+    padding:1.2em 3.4em;
+    top:72.5%;
+}
+
+/*---- figure ----*/
+.tile-2 .banner{
+    top:42%;
+    left:12.2%;
+    height: 30px;
+}
+
+.tile-2 .figure-text{
+    text-align: right;
+    width: 150px;
+    top: 46.4%;
+    left: 55.5%;
+}
+
+.tile-2 .figure-text .line-1{ 
+    font-size: 1.5rem;
+}
+
+.tile-2 .figure-text .line-2{ 
+    font-size: 1.5rem;
+    top: 34px;
+}
+
+.tile-2 .figure-text .line-3{ 
+/*    opacity: 0;*/
+    font-size: 0.2rem;
+    top: 56px;
+}
+
+.tile-2 .fas{
+    left: 81.5%;
+    opacity: 0.95;
+}
+
+.tile-2 .fa-umbrella-beach{
+    font-size: 1.3rem;
+    top: 24.5%;
+    border-bottom: 1.4px dotted #fff;
+    padding-bottom: 6.5px;
+}
+
+.tile-2 .fa-ship{
+    font-size: 1.3rem;
+    top: 44%;
+    border-bottom: 1.4px dotted #fff;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+
+.tile-2 .fa-swimmer{
+    font-size: 1.3rem;
+    top: 70%;
+} 
+
+/*------ checkbox -------*/
+.tile-2 .check-box-gup{
+    top:61.5%;
+    left:11.2%;
+    width: 250px;
+}
+
+.tile-2 .check-box-gup-line-1{
+    font-size: 9px;
+    font-weight: 500;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.tile-2 .check-box-1{
+    height:21px;
+    margin-right: -4px;
+}
+
+.tile-2 .check-box-gup-line-2{
+    top:19px;
+    font-size: 9px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.tile-2 .check-box-2{
+    height:21px;
+    margin-right: -4px;
+}
+
+
+/*--------- Phone Tile-3 ------------*/
+.tile-3 .image-container{
+    height:11.5rem;
+    width: 98.6%;
+}
+
+.tile-3 .bg{
+    max-width: 120%;
+    left: 0px;
+    top: -120px;
+}
+
+/*-------------- Title -----------*/
+.tile-3 .title{
+    font-size:1.9rem;
+    left: 44.5%;
+    top:28.5%;
+}
+
+article.tile:hover .title-3{
+    top:28%;
+    left:50%;
+    font-size:26px;
+}
+
+.tile-3 .sub-title{
+    font-size: 10pt;
+    opacity: 0.5;
+    top:51%;
+    left:30%;
+}
+
+/*------- after hover----- */
+.tile-3 .description{
+    font-size: 9px; 
+    width: 80%;
+    top:48%;
+}
+
+/*----- order-btn -----*/
+article.tile:hover .order-btn-3{
+    font-size: 7px;
+    padding:1.2em 3.4em;
+    top:72.5%;
+    opacity: 0.9;
+}
+
+/*---- figure ----*/
+.tile-3 .banner{
+    height: 30px;
+    top:42%;
+    left:12.5%;
+}
+
+.tile-3 .figure-text{
+    width: 150px;
+    top: 46.5%;
+    left: 56.25%;
+    text-align: right;
+}
+
+.tile-3 .figure-text .line-1{ 
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tile-3 .figure-text .line-2{ 
+    font-size: 1.5rem;
+    top: 34px;
+}
+
+.tile-3 .figure-text .line-3{ 
+    font-size: 0.5rem;
+    top: 59px;
+}
+
+.tile-3 .fas{
+    left: 84%;
+    opacity: 0.95;
+}
+
+.tile-3 .fa-tree{
+    font-size: 1.6rem;
+    top: 22%;
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 10px;
+}
+
+.tile-3 .fa-hiking{
+    font-size: 1.6rem;
+    top: 44.5%;
+    border-bottom: 1px dotted #fff;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+
+.tile-3 .fa-bicycle{
+    font-size: 1.5rem;
+    left: 83%;
+    top: 69.8%;
+}
+
+/*------ checkbox -------*/
+.tile-3 .check-box-gup{
+    top:63.2%;
+    left:11.5%;
+    width: 250px;
+}
+
+.tile-3 .check-box-gup-line-1{
+    font-size: 9px;
+}
+
+.tile-3 .check-box-1{
+    height:21px;
+    vertical-align: -7px;
+    opacity: 0.9;
+}
+
+.tile-3 .check-box-gup-line-2{
+    width:100%;
+    top:18px;
+    font-size: 9px;
+}
+
+.tile-3 .check-box-2{
+    height:21px;
+}
+
+
+/*------------- Phone Tile-4 -----------*/
+.tile-4 {
+    height: 22rem;
+    width:98.5%;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    position:relative;
+    border: 1px solid #000;
+}
+
+.tile-4 img{
+    max-width:160%;
+    top:-8%;
+    left:-30%;
+}
+
+.tile-4 .logo{
+    height: 3rem;
+    top: 11%;
+    left: 38%;
+}
+
+.tile-4 .sub-title{
+    font-size: 1.25rem;
+    top: 24%;
+    left: 36%;
+}
+
+.tile-4 .title{
+    font-size: 5rem;
+    top:34%;
+    left: 29%;   
+}
+
+.tile-4 .description-4{
+    font-size: 9px;
+    width: 75%;
+    opacity: 1;
+    top: 60%;
+    left: 13%;
+}
+
+.tile-4 .order-btn-4{
+    font-size: 10px;
+    padding:1em 2.5em;
+    top:79%;
+    left: 32%;
+}
+
+
+
+/*---------- Phone tile-5 ----------*/
+.tile-5{
+    height:11.5rem;
+    width:98.5%;
+}
+
+.tile-5 .image-container-5{
+    height:20rem;
+    width:100%;
+}
+
+.tile-5 .bg-5{
+    max-width:100%;
+    top: 0%;
+}
+
+.tile-5 .content .about-us{
+    font-size: 14px;
+    line-height: 18px;
+    width: 72%;
+    top:23%;
+    left: 14%;
+}
+
+
+/*-------- Phone tile-6 -----------*/
+.tile-6{
+    height: 11.5rem;
+}
+    
+.tile-6 .image-container-6{
+    height:11.5rem;
+    width: 98.5%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.tile-6 img{
+    max-width:200%;
+    position: absolute;
+    top: -155px;
+}
+
+.tile-6 .paragraph{
+    font-size: 1.4rem;
+    width:80%;
+    text-align: center;
+    line-height: 1.4;
+    top:29%;
+    left: 10%;
+   
+}
+
+/*--------- Phone tile-7 ---------*/
+.tile-7{
+    border: 1px solid #000;
+    height: 11.5rem;
+    width: 98.5%;
+}
+
+.tile-7 .image-container{
+    
+}
+
+.tile-7 .t7-bg{
+    left:0px;
+    top:-30px;
+    transform: scale(1.1);
+}
+
+.is-vertical .tile-7 .logo{
+    width:35%;
+    left: 33%;
+    top: 46.5%;
+}
+
+.tile-7 .ski-l{
+    width:70px;
+    left: 12.5%;
+    top: 47%;
+    opacity:0.25;
+}
+
+.tile-7 .ski-r{
+    width:70px;
+    left: 72%;
+    top: 47%;
+    opacity:0.25;
+}
+
+.tile-7 .title-1{
+    font-size: 9pt;
+    top:59%;
+    left:11.5%;
+    opacity: 0.5;
+}
+
+.tile-7 .title-2{
+    font-size: 9pt;
+    top:58%;
+    left:72%;
+    opacity: 0.58;
+}
+
+
+
+/*----------- Phone tile-8 ------------*/  
+  
+.tile-8 .image-container{
+    height:11.5rem;
+    width: 98.5%;
+    border: 1px solid #000;
+}
+    
+.tile-8 img{
+     max-width: 125%; 
+
+}
+
+/*-------------- Title -----------*/
+.tile-8 .title-8{
+    font-size:28pt;
+    left: 42%;
+    top:29%;
+}
+
+article.tile:hover .title-8{
+    top:18%;
+    left:50%;
+    font-size:21pt;
+}
+
+.tile-8 .sub-title{
+    font-size: 11pt;
+    top:53%;
+    left:31%;
+}
+
+/*------- after hover----- */
+.tile-8 .description-8{
+    font-size: 9pt;
+    width: 320px;
+    top:47%;
+}
+
+.tile-8 .ski-after{
+    top: 50%;
+}
+
+/*----- order-btn -----*/
+article.tile-8:hover .order-btn-8,
+article.tile-8.hover .order-btn-8{
+    font-size: 7px;
+    padding:1.2em 3.4em;
+    top: 80%;
+}
+
+/*---- figure ----*/
+.tile-8 .banner{
+    top:45%;
+    left:14%;
+    height: 30px;
+}
+
+.tile-8 .figure-text{
+    width: 150px;
+    top: 47.5%;
+    left: 70%;
+}
+
+.tile-8 .figure-text .line-1{ 
+    font-size: 1.1rem;
+    left: 68%;
+}
+
+.tile-8 .figure-text .line-2{ 
+    font-size: 1.1rem;
+    top: 23px;
+    left: 70%;
+}
+
+.tile-8 .figure-text .line-3{ 
+    opacity: 0;
+/*
+    font-size: 9px;
+    font-weight: 500;
+    top: 50px;
+*/
+}
+
+.tile-8 .fas{
+    left: 79%;
+}
+
+.tile-8 .fa-helicopter{
+    font-size: 1.4rem;
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 7px;
+    top: 24%;
+}
+
+.tile-8 .fa-hiking{
+    font-size: 1.68rem;
+    top: 42.7%;
+    left:79.3%;
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 7px;
+    padding-left: 4px;
+    padding-right: 8px;
+}
+
+.tile-8 .fa-mountain{
+    font-size: 1.4rem;
+    top: 71.5%;
+    left: 79.8%;
+    opacity: 0.95;
+}
+
+/*------ checkbox -------*/
+.tile-8 .check-box-gup{
+    top:64%;
+    left:13%;
+    opacity: 0.8;
+}
+
+.tile-8 .check-box-gup-line-1{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tile-8 .check-box-1{
+    height:24px;
+    vertical-align: -6px;
+}
+
+.tile-8 .check-box-gup-line-2{
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 500;
+    top:8px;
+}
+
+.tile-8 .check-box-2{
+    height:24px;
+    vertical-align: -6px;
+}
+
+/*------------ Phone tile-9 -----------*/
+.tile-9{
+    height: 11.5rem;
+    width: 98.5%;
+    border: 1px solid #000;
+}
+
+.tile-9 .image-container{
+    height: 11.5rem;
+}
+
+.tile-9 .bg{
+    left: 0px;
+    top: -60px;
+    max-width: 100%;
+}
+
+.tile-9 .title{
+    font-size:1.8rem;
+    left: 40%;
+    top:20%;
+}
+
+.tile-9 .description{
+    font-size: 9px;
+    width: 320px;
+    top:42.5%;
+    left: 10.5%;
+    line-height: 16px;
+}
+
+ .order-btn-9{
+    font-size: 7px;
+    padding: 1.2em 3.4em;
+    top:67%;
+    left: 33%;
+}
+
+.tile-9 .fa-bookmark{
+    font-size: 1.6rem;
+    top: 22.5%;
+    left: 31%;
+}
+
+
+/*----------- Phone tile-10 -----------*/
+.tile-10{
+    height: 11.5rem;
+    width: 98.5%;
+    border: 1px solid #000;
+}
+
+.tile-10 .image-container{
+    height:11.5rem;
+}
+
+.tile-10 .bg{
+    max-width: 131%;
+}
+
+.tile-10 .title{
+    font-size:1.8rem;
+    left: 35.5%;
+    top:20%;
+}
+
+.tile-10 .description{
+    font-size: 9px;
+    width: 320px;
+    line-height: 16px;
+    text-shadow: 0px 0px 40px rgba(0,0,0,0.9);
+    top:42.5%;
+    left: 10%;
+}
+
+ .order-btn-10{
+    font-size: 7px;
+    padding:1.2em 3.6em;
+    top:67%;
+    left: 34.5%;
+}
+
+.tile-10 .fa-user{ 
+    font-size: 1.7rem;
+    top: 20%;
+    left: 26%;
+}
+/*------- Phone tile-11 ----------*/
+.tile-11{
+    height: 22rem;
+    width: 98.5%;
+    boeder: 1px solid #000;
+}
+
+.tile-11 .bg-11{
+    max-width: 240%;
+    left: -70px;
+    top: -55px;
+}
+    
+.tile-11 .title{
+    font-size: 1.6rem;
+    top: 50%;
+    left: 88%;
+}
+    
+.tile-11 .subtitle{
+    font-size: 1.6rem;
+    width: 55%;
+    line-height: 2.6rem;
+    top: 61.5%;
+    left: 49%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
